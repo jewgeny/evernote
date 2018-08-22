@@ -1,0 +1,16 @@
+form {
+    display: grid;
+    width: 100%;
+    background-color: green;
+    grid-template: repeat(9,auto) / repeat(6, 1fr);
+    h3{
+        grid-area:  3 / 1 / span 1 / span 3;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+    }
+    p{
+        grid-area:  5 / 1 / span 2 / span 3;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+    }
+}
