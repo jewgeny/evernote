@@ -1,16 +1,57 @@
 form {
     display: grid;
     width: 100%;
-    background-color: green;
+    background-color: #00a82d;
     grid-template: repeat(9,auto) / repeat(6, 1fr);
-    h3{
-        grid-area:  3 / 1 / span 1 / span 3;
+    grid-gap: 0.5vw 2vw;
+    h1{
+        grid-area:  5 / 1 / span 1 / span 3;
+        font-size: 3vw;
+        padding: 1vw 0.5vw;
+        color: white;
+        margin:1vw 2vw;
+    }
+    p.description {
+        grid-area:  6 / 1 / span 1 / span 3;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+        margin: 1vw 2vw;
+        color: white;
+    }
+    button.google {
+
+        grid-area:  3 / 5 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+    }
+    h4{
+      grid-area:  4 / 5 / span 1 / span 2;
+      font-size: 1.5vw;
+      //padding: 1vw 0.5vw;
+      text-align: center;
+
+    }
+    input[type="email"] {
+        grid-area: 5 / 5 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+        margin: auto 0;
+    }
+    input[type="password"] {
+        grid-area: 6 / 5 / span 1 / span 2;
         font-size: 1.5vw;
         padding: 1vw 0.5vw;
     }
     p{
-        grid-area:  5 / 1 / span 2 / span 3;
-        font-size: 1.5vw;
-        padding: 1vw 0.5vw;
+      grid-area: 7 / 5 / span 1 / span 2;
+      font-size: 1vw;
+      padding: 1vw 0.5vw;
     }
+    button{
+      grid-area:  8 / 5 / span 1 / span 2;
+      font-size: 1.5vw;
+      padding: 1vw 0.5vw;
+
+    }
+
 }
