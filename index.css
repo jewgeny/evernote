@@ -16,6 +16,59 @@ nav div img {
   }
 }
 
+nav div:last-of-type div .dropdown {
+  margin: 0 !important;
+}
+
+nav div:last-of-type div .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+nav div:last-of-type div .dropdown button {
+  font-weight: bold;
+}
+
+nav div:last-of-type div .dropdown button i {
+  font-size: 0.8vw;
+}
+
+nav div:last-of-type div .dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+nav div:last-of-type div .dropdown-content {
+  display: none;
+  padding: 0.5vw;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav div:last-of-type div .dropdown-content div {
+  color: white;
+  padding: 1vw 5vw;
+}
+
+nav div:last-of-type div .dropdown-content div:hover {
+  background-color: green;
+}
+
+nav div:last-of-type div .dropdown-content div:hover i {
+  color: white;
+}
+
+nav div:last-of-type div .dropdown-content div i {
+  font-size: 3vw;
+  color: green;
+  position: relative;
+  left: -2vw;
+}
+
 nav div:last-of-type div a {
   font-weight: bold;
   margin: 0 1.2vw;
@@ -27,24 +80,20 @@ nav div:last-of-type div a:hover {
   color: #009a00;
 }
 
-nav div:last-of-type div a i {
-  font-size: 0.8vw;
-}
-
-nav div:last-of-type div:last-of-type {
+nav div:last-of-type div.box-right {
   margin-right: 3vw;
 }
 
-nav div:last-of-type div:last-of-type a {
+nav div:last-of-type div.box-right a {
   font-weight: normal;
   text-decoration: none;
 }
 
-nav div:last-of-type div:last-of-type span {
+nav div:last-of-type div.box-right span {
   margin: 0 1vw;
 }
 
-nav div:last-of-type div:last-of-type button {
+nav div:last-of-type div.box-right button {
   border: 2px solid #33cc33;
   background-color: white;
   padding: 0.5vw 2.5vw;
@@ -52,6 +101,6 @@ nav div:last-of-type div:last-of-type button {
   border-radius: 0.3vw;
 }
 
-nav div:last-of-type div:last-of-type button:hover {
+nav div:last-of-type div.box-right button:hover {
   border-color: #00e600;
 }
