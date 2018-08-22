@@ -1,0 +1,57 @@
+nav div img {
+  width: 15vw;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  nav div img {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+nav div:last-of-type div a {
+  font-weight: bold;
+  margin: 0 1.2vw;
+  color: black;
+  text-decoration: none;
+}
+
+nav div:last-of-type div a:hover {
+  color: #009a00;
+}
+
+nav div:last-of-type div a i {
+  font-size: 0.8vw;
+}
+
+nav div:last-of-type div:last-of-type {
+  margin-right: 3vw;
+}
+
+nav div:last-of-type div:last-of-type a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+nav div:last-of-type div:last-of-type span {
+  margin: 0 1vw;
+}
+
+nav div:last-of-type div:last-of-type button {
+  border: 2px solid #33cc33;
+  background-color: white;
+  padding: 0.5vw 2.5vw;
+  cursor: pointer;
+  border-radius: 0.3vw;
+}
+
+nav div:last-of-type div:last-of-type button:hover {
+  border-color: #00e600;
+}
