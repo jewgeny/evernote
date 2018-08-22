@@ -7,18 +7,18 @@ form {
 }
 
 form h1 {
-  grid-area: 5 / 1 / span 1 / span 3;
+  grid-area: 5 / 1 / span 1 / span 4;
   font-size: 3vw;
   padding: 1vw 0.5vw;
   color: white;
-  margin: 1vw 2vw;
+  margin: 1vw 6vw;
 }
 
 form p.description {
-  grid-area: 6 / 1 / span 1 / span 3;
+  grid-area: 6 / 1 / span 1 / span 4;
   font-size: 1.5vw;
   padding: 1vw 0.5vw;
-  margin: 1vw 2vw;
+  margin: 1vw 6vw;
   color: white;
 }
 
@@ -26,35 +26,39 @@ form button.google {
   grid-area: 3 / 5 / span 1 / span 2;
   font-size: 1.5vw;
   padding: 1vw 0.5vw;
+  margin: 1vw 4vw;
 }
 
 form h4 {
   grid-area: 4 / 5 / span 1 / span 2;
   font-size: 1.5vw;
   text-align: center;
+  margin: 1vw 4vw;
+  color: white;
 }
 
 form input[type="email"] {
   grid-area: 5 / 5 / span 1 / span 2;
   font-size: 1.5vw;
   padding: 1vw 0.5vw;
-  margin: auto 0;
+  margin: 1vw 4vw;
 }
 
 form input[type="password"] {
   grid-area: 6 / 5 / span 1 / span 2;
   font-size: 1.5vw;
-  padding: 1vw 0.5vw;
+  margin: 1vw 4vw;
 }
 
 form p {
   grid-area: 7 / 5 / span 1 / span 2;
   font-size: 1vw;
-  padding: 1vw 0.5vw;
+  margin: 1vw 4vw;
 }
 
 form button {
   grid-area: 8 / 5 / span 1 / span 2;
   font-size: 1.5vw;
-  padding: 1vw 0.5vw;
+  margin: 1vw 4vw;
+  color: green;
 }
