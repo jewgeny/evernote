@@ -6,9 +6,10 @@
 $bg-grey: #f5f5f0;
 
 nav{
-  position: fixed!important;
+  // position: fixed!important;
   background-color: white;
   width: 100%;
+  padding:0!important;
 
  div{
      img{
@@ -206,4 +207,64 @@ nav{
     img{
       margin: 6vw 0;
   }
+}
+
+.homepage{
+  padding: 3vw 0;
+
+  div{
+    div{
+
+      h2{
+        font-size: 3vw;
+      }
+
+      h3{
+        font-size: 1.8vw;
+        line-height: 3vw;
+        margin-bottom: 3vw;
+      }
+
+      span{
+        font-weight: bold;
+        color: green;
+        cursor: pointer;
+
+        &:hover{
+          color: lighten(green, 10%);
+          i{
+            color: lighten(green, 10%);
+          }
+        }
+        i{
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+.four-div{
+  background-color: $bg-grey;
+  padding: 3vw 0;
+
+div{
+  div{
+    div{
+      background-color: $bg-grey;
+      text-align: center;
+      img{
+        width: 30%;
+        margin:0 auto;
+      }
+      h2{
+        font-size: 1.5vw;
+        margin:1vw 0;
+      }
+      p{
+        line-height: 2.5vw;
+      }
+    }
+  }
+ }
 }
