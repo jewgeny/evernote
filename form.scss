@@ -4,6 +4,7 @@ form {
     background-color: #00a82d;
     grid-template: repeat(9,auto) / repeat(6, 1fr);
     grid-gap: 0.2vw 0.5vw;
+
     button,h4,input,p.policy{
       border-radius: 0.5vw;
     }
@@ -29,6 +30,7 @@ form {
         font-size: 1.5vw;
         padding: 1vw 0.5vw;
         margin: 1vw 4vw;
+        background-color: #fff;
 
 
     }
@@ -68,6 +70,7 @@ form {
       margin: 1vw 4vw;
       padding: 0.5vw 0.5vw;
       color:green;
+      background-color: #fff;
 
     }
 
