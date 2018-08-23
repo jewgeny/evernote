@@ -26,8 +26,16 @@ nav{
          margin: 0!important;
 
           &:hover .dropdown-content {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
+            display: grid;
+            width: auto;
+            grid-template-columns: auto auto auto;
+            grid-auto-rows: auto;
+            grid-template-areas: 'basic . compare'
+                                 'premium . contact '
+                                 'business . .'
+                                  ;
             cursor: pointer;
           }
 
@@ -58,6 +66,29 @@ nav{
              display: flex;
              flex-direction: row;
              align-items: center;
+
+
+             &:nth-of-type(1){
+               grid-area: basic;
+             }
+
+             &:nth-of-type(2){
+               grid-area: premium;
+             }
+
+             &:nth-of-type(3){
+               grid-area: business;
+             }
+
+             &:nth-of-type(4){
+               grid-area: compare;
+
+
+             }
+
+             &:nth-of-type(5){
+               grid-area: contact;
+             }
 
                 &:hover{
                  background-color: green;
