@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes p-animation1 {
+  0% {
+    transform: translate(-100vw, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0vw, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100, 0);
+    opacity: 0;
+  }
+}
+
 nav {
   background-color: white;
   width: 100%;
@@ -219,9 +243,65 @@ nav div:last-of-type div.box-right button:hover {
   color: green;
 }
 
+.slideshow {
+  padding: 10vw 0;
+}
+
+.slideshow img {
+  margin: 0 2.5vw;
+  width: 10vw;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.slideshow img:nth-child(1) {
+  animation: pulse 5s linear;
+  animation-delay: 1s;
+}
+
+.slideshow img:nth-child(2) {
+  animation: pulse 5s linear;
+  animation-delay: 2s;
+}
+
+.slideshow img:nth-child(3) {
+  animation: pulse 5s linear;
+  animation-delay: 3s;
+}
+
+.slideshow img:nth-child(4) {
+  animation: pulse 5s linear;
+  animation-delay: 4s;
+}
+
+.slideshow img:nth-child(5) {
+  animation: pulse 5s linear;
+  animation-delay: 5s;
+}
+
+.slideshow img:nth-child(6) {
+  animation: pulse 5s linear;
+  animation-delay: 6s;
+}
+
+.slideshow img:hover {
+  opacity: 1;
+}
+
+.slideshow p {
+  margin-top: 3vw;
+  opacity: 0;
+  animation: p-animation1 5s infinite;
+}
+
 .four-div {
   background-color: #f5f5f0;
   padding: 3vw 0;
+}
+
+.four-div h2 {
+  margin: 5vw 0;
+  font-size: 3vw;
 }
 
 .four-div div div div {
