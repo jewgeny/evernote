@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="eugen.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>evernote</title>
 </head>
 <body>
 
 <!-- nav (E)  -->
-<nav class="navbar navbar-expand-md navbar-expand-lg navbar-light fixed-top" >
+<nav class="navbar navbar-expand-md navbar-expand-lg navbar-light sticky-top">
 
     <div class="pl-4">
       <img src="images/logo.jpg">
@@ -26,13 +26,98 @@
 
         <div class="collapse navbar-collapse justify-content-between position navbar-nav" id="navbarNavAltMarkup">
             <div class="d-inline-flex align-items-center">
-              <a class="" href="#about_company">WHY EVERNOTE</a>
-              <a class="" href="#services">PLANS <i class="fa fa-caret-down"></i></a>
-              <a class="" href="#portfolio">HELP & LEARNING</a>
-              <a class="" href="#">ABOUT US <i class="fa fa-caret-down"></i></a>
+              <a class="" href="#">WHY EVERNOTE</a>
+              <!-- <a class="" href="#services">PLANS <i class="fa fa-caret-down"></i></a> -->
+              <div class="dropdown">
+                 <button class="dropbtn">PLANS <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+
+                      <div>
+                        <i class="fa fa-file-text"></i>
+                        <div class="box1">
+                           <p>Basic</p>
+                          <span>Take great notes</span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <i class="fa fa-star"></i>
+                        <div class="box1">
+                           <p>Premium</p>
+                          <span>Uncltuter your live</span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <i class="fa fa-cube"></i>
+                        <div class="box1">
+                           <p>Business</p>
+                          <span>Bring your team together</span>
+                        </div>
+                      </div>
+
+                      <div>
+                         <i class="fa fa-cubes"></i>
+                         <div class="box1">
+                            <p>Compare Plans</p>
+                           <span>Find the Evernote solution</span>
+                         </div>
+                      </div>
+
+                   </div>
+              </div>
+
+              <a class="" href="#">HELP & LEARNING</a>
+              <!-- <a class="" href="#">ABOUT US <i class="fa fa-caret-down"></i></a> -->
+              <div class="dropdown">
+                 <button class="dropbtn">ABOUT US <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content2">
+
+                      <div>
+                        <i class="fa fa-github"></i>
+                        <div class="box1">
+                           <p>ABOUT EVERNOTE </p>
+                          <span>Learn about the company</span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <i class="fa fa-list-alt"></i>
+                        <div class="box1">
+                           <p>PRESS</p>
+                          <span>Evernote in the news</span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <i class="fa fa-globe"></i>
+                        <div class="box1">
+                           <p>INCLUSION & DIVERSITY</p>
+                          <span>Bring your team together</span>
+                        </div>
+                      </div>
+
+                      <div>
+                         <i class="fa fa-line-chart"></i>
+                         <div class="box1">
+                            <p>CAREERS</p>
+                           <span>Oppurtunities at Evernote</span>
+                         </div>
+                      </div>
+
+                      <div>
+                         <i class="material-icons">contact_mail</i>
+                         <div class="box1">
+                            <p>CONTACT US</p>
+                           <span>Need help? Get </span>
+                         </div>
+                      </div>
+
+                   </div>
+              </div>
            </div>
 
-           <div class="d-flex justify-content-end align-items-center">
+           <div class="box-right d-flex justify-content-end align-items-center">
               <a class="text-success" href="#">Sign up</a>
               <span>or</span>
               <button class="text-success">Log in</button>
@@ -43,15 +128,39 @@
 </nav>
 
 <section>
-<!-- section 1 (Carmine) -->
+<!-- section 1 (Moh) -->
 </section>
 
 <section>
-  <!-- section 2 (Moh) -->
+ <!-- section 2 (Carmine) -->
 </section>
 
-<section>
+<section class="container-fluid text-center header">
   <!-- section 3 (Eugen) -->
+    <img src="images/homepage-focus.png">
+    <h2>Focus on what matters most</h2>
+
+  <div class="row justify-content-center my-3">
+
+     <div class="card col-4 border-0 bg-grey">
+       <p>Manage everything </p>
+       <p>from big projects to </p>
+       <p>personal moments.</p>
+     </div>
+
+     <div class="card col-4 border-0 bg-grey">
+       <p>Capture ideas and </p>
+       <p>inspiration in notes,</p>
+       <p>voice, and pictures.</p>
+     </div>
+
+     <div class="card col-4 border-0 bg-grey">
+       <p>Never lose track of your </p>
+       <p>tasks and deadlines.</p>
+     </div>
+
+  </div>
+
 </section>
 
 <section>
@@ -62,21 +171,75 @@
   <!-- section 5 (Moh) -->
 </section>
 
-<section>
+<section class="container-fluid homepage">
   <!-- section 6 (Eugen) -->
+  <div class="row justify-content-around">
+
+     <div class="col-sm-12 col-md-12 col-lg-4">
+       <img class="" src="images/homepage-stay-organized.png">
+     </div>
+
+     <div class="col-sm-12 col-md-12 col-lg-6">
+       <h2 class="text-success">Stay organized, wherever you are</h2>
+       <h3 class="text-dark">Plan, keep records, and manage projects from any device–even offline.</h3>
+       <span>EVERNOTE PREMIUM <i class="fa fa-long-arrow-right"></i></span>
+     </div>
+
+
+  </div>
 </section>
 
 <section>
   <!-- section 7 (Carmine) -->
 </section>
 
-<section>
-  <p></p>
-  <!-- section 8 (Moh) -->
+<section class="container-fluid slideshow justify-content-between text-center">
+
+<img src="images/business-active-black.png" alt="" class="img-1">
+<img src="images/the-verge-active.png" alt="" class="img-2">
+<img src="images/webby-active.png" alt="" class="img-3">
+<img src="images/forbes-active-black.png" alt="" class="img-4">
+<img src="images/cloud100-active.png" alt="" class="img-5">
+<img src="images/the-manual.png" alt="" class="img-6">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi labore, sequi dignissimos impedit</p>
+
 </section>
 
-<section>
+<section class="container-fluid four-div text-center">
+    <h2>How It Works</h2>
+  <div class="container">
   <!-- section 9 (Eugen) -->
+     <div class="row">
+
+     <div class="col-md-6 col-lg-3 card border-0">
+       <img src="../images/sign-up.png" alt="">
+       <h2>SIGN UP</h2>
+       <p>Create your free account and choose the plan that fits your needs.</p>
+     </div>
+
+     <div class="col-md-6 col-lg-3 card border-0">
+       <img src="../images/add-content.png" alt="">
+       <h2>ADD CONTENT</h2>
+       <p>Type notes, add attachments, clip web pages, or record memos. All in one place.</p>
+     </div>
+
+     <div class="col-md-6 col-lg-3 card border-0">
+       <img src="../images/find-everything.png" alt="">
+       <h2>FIND EVERYTHING</h2>
+       <p>Organize your way. Use notebooks, tags, or our powerful search to find everything you need quickly.</p>
+     </div>
+
+     <div class="col-md-6 col-lg-3 card border-0">
+       <img src="../images/get-things-done.png" alt="">
+       <h2>GET THINGS DONE</h2>
+       <p>Manage projects, take meeting notes, set reminders, and edit documents.</p>
+     </div>
+
+  </div>
+  <button type="button" class="py-3 px-4">START YOUR FREE TRIAL</button>
+
+</div>
 </section>
 
 <section>
@@ -86,5 +249,6 @@
 <section>
   <!-- section 11 Form (Carmine) -->
 </section>
+
 </body>
 </html>
