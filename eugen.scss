@@ -403,7 +403,11 @@ nav{
 }
 
 .slideshow{
- padding: 10vw 0;
+ padding: 15vw 0;
+
+ @media screen and (max-width: 600px){
+   padding: 25vw 0!important;
+ }
 
  .carousel-indicators .active {
    opacity: 1!important;
@@ -411,7 +415,6 @@ nav{
 
   ul{
     width: 90vw;
-
 
     li{
         @each $num, $img in (1, business-active-black), (2, the-verge-active), (3, webby-active), (4, forbes-active-black),

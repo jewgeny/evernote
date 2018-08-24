@@ -391,7 +391,13 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .slideshow {
-  padding: 10vw 0;
+  padding: 15vw 0;
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow {
+    padding: 25vw 0 !important;
+  }
 }
 
 .slideshow .carousel-indicators .active {
