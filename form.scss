@@ -1,0 +1,77 @@
+form {
+    display: grid;
+    width: 100%;
+    background-color: #00a82d;
+    grid-template: repeat(9,auto) / repeat(6, 1fr);
+    grid-gap: 0.2vw 0.5vw;
+
+    button,h4,input,p.policy{
+      border-radius: 0.5vw;
+    }
+
+
+    h2{
+        grid-area:  5 / 1 / span 1 / span 4;
+        font-size: 3vw;
+        padding: 0.5vw 0.5vw;
+        color: white;
+        margin:1vw 6vw;
+    }
+    p.description {
+        grid-area:  6 / 1 / span 1 / span 4;
+        font-size: 1.5vw;
+        padding: 1.5vw 0.5vw;
+        margin: 1vw 6vw;
+        color: white;
+    }
+    button.google {
+
+        grid-area:  3 / 5 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+        margin: 1vw 4vw;
+        background-color: #fff;
+
+
+    }
+    h4{
+      grid-area:  4 / 5 / span 1 / span 2;
+      font-size: 1.5vw;
+      //padding: 1vw 0.5vw;
+      text-align: center;
+      padding: 1vw 0.5vw;
+      padding: 1vw 0.5vw;
+      margin: 0vw 4vw;
+      color:white;
+      border:0;
+    }
+    input[type="email"] {
+        grid-area: 5 / 5 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+        margin: 1vw 4vw;
+    }
+    input[type="password"] {
+        grid-area: 6 / 5 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 0vw 0.5vw;
+        margin: 1.3vw 4vw;
+    }
+    p{
+      grid-area: 7 / 5 / span 1 / span 2;
+      font-size: 1vw;
+      margin: 0vw 4vw;
+      padding: 0.5vw 0.5vw;
+    }
+    button{
+      grid-area:  8 / 5 / span 1 / span 2;
+      font-size: 1.5vw;
+      //padding: 1vw 0.5vw;
+      margin: 1vw 4vw;
+      padding: 0.5vw 0.5vw;
+      color:green;
+      background-color: #fff;
+
+    }
+
+}
