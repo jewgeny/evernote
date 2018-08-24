@@ -394,51 +394,107 @@ nav div:last-of-type div.box-right button:hover {
   padding: 10vw 0;
 }
 
-.slideshow img {
-  margin: 0 2.5vw;
-  width: 10vw;
+.slideshow .carousel-indicators .active {
+  opacity: 1 !important;
+}
+
+.slideshow ul {
+  width: 90vw;
+}
+
+.slideshow ul li:nth-of-type(1) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/business-active-black.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   opacity: 0.4;
-  cursor: pointer;
+  margin: 0 2vw;
 }
 
-.slideshow img:nth-child(1) {
-  animation: pulse 1s linear;
-  animation-delay: 1s;
-}
-
-.slideshow img:nth-child(2) {
-  animation: pulse 2s linear;
-  animation-delay: 2s;
-}
-
-.slideshow img:nth-child(3) {
-  animation: pulse 3s linear;
-  animation-delay: 3s;
-}
-
-.slideshow img:nth-child(4) {
-  animation: pulse 4s linear;
-  animation-delay: 4s;
-}
-
-.slideshow img:nth-child(5) {
-  animation: pulse 5s linear;
-  animation-delay: 5s;
-}
-
-.slideshow img:nth-child(6) {
-  animation: pulse 6s linear;
-  animation-delay: 6s;
-}
-
-.slideshow img:hover {
+.slideshow ul li:nth-of-type(1):hover {
   opacity: 1;
 }
 
-.slideshow p {
-  margin-top: 3vw;
-  opacity: 0;
-  animation: p-animation1 5s infinite;
+.slideshow ul li:nth-of-type(2) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/the-verge-active.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  margin: 0 2vw;
+}
+
+.slideshow ul li:nth-of-type(2):hover {
+  opacity: 1;
+}
+
+.slideshow ul li:nth-of-type(3) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/webby-active.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  margin: 0 2vw;
+}
+
+.slideshow ul li:nth-of-type(3):hover {
+  opacity: 1;
+}
+
+.slideshow ul li:nth-of-type(4) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/forbes-active-black.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  margin: 0 2vw;
+}
+
+.slideshow ul li:nth-of-type(4):hover {
+  opacity: 1;
+}
+
+.slideshow ul li:nth-of-type(5) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/cloud100-active.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  margin: 0 2vw;
+}
+
+.slideshow ul li:nth-of-type(5):hover {
+  opacity: 1;
+}
+
+.slideshow ul li:nth-of-type(6) {
+  width: 30vw;
+  height: 5vw;
+  background-image: url(images/the-manual.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  margin: 0 2vw;
+}
+
+.slideshow ul li:nth-of-type(6):hover {
+  opacity: 1;
+}
+
+.slideshow .slide-text-box {
+  position: absolute;
+  top: 2vw;
+}
+
+.slideshow .slide-text-box div p {
+  font-size: 1.5vw;
+  color: black;
+  margin: 0 10vw;
 }
 
 .four-div {

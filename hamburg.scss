@@ -1,6 +1,6 @@
 .hamburg_home{
     background-color: #00a82d;
-
+    padding: 5vw 0;
 
     div.main{
       display:flex;
@@ -17,13 +17,26 @@
         h2,p{
           color:#fff;
         }
+        h2{
+          font-weight: 500;
+        }
+        p{
+          margin:3vw 0;
+          font-size: 1.8vw;
+        }
         button{
           color: green;
-          padding: 1.5vw 0.5vw;
+          padding: 1.2vw 0.5vw;
           width: 50%;
           font-size: 1.5vw;
+          font-weight: bold;
           background-color: #fff;
           border-radius: 0.5vw;
+          border: none;
+          cursor: pointer;
+          &:hover{
+            background-color: darken(#fff, 5%);
+          }
        }
 
       }
@@ -38,7 +51,7 @@
           color:#fff;
         }
         img{
-          width:30vw;
+          width:40vw;
 
 
         }

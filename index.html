@@ -15,6 +15,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
   <title>evernote</title>
 </head>
 <body>
@@ -133,19 +137,17 @@
         </div>
 </nav>
 
-
-<section>
 <!-- section 1 (Moh) -->
 <section class="hamburg_home">
   <div class="main">
     <div>
-      <h2>Feel organized without the effort</h2>
+      <h2 class="display-4">Feel organized without the effort</h2>
       <p>BestCompany helps you capture and prioritize ideas, projects, and to-do lists, so nothing falls through the cracks.</p>
       <button type="button" name="signup">Sign up for free</button>
     </div>
   <div>
-      <h2>Hamburg Based</h2>
-      <img src="img/hamburg.jpg" alt="Hamburg">
+      <!-- <h2>Hamburg Based</h2> -->
+      <img src="images/homepage-hero-desktop.png" alt="Computer">
   </div>
 </div>
 <!-- section 1 (Carmine) -->
@@ -216,14 +218,46 @@
 
 <section class="container-fluid slideshow justify-content-between text-center">
 
-<img src="images/business-active-black.png" alt="" class="img-1">
-<img src="images/the-verge-active.png" alt="" class="img-2">
-<img src="images/webby-active.png" alt="" class="img-3">
-<img src="images/forbes-active-black.png" alt="" class="img-4">
-<img src="images/cloud100-active.png" alt="" class="img-5">
-<img src="images/the-manual.png" alt="" class="img-6">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi labore, sequi dignissimos impedit</p>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+   <ul class="carousel-indicators mx-auto">
+     <li data-target="#demo" data-slide-to="0" class="active"></li>
+     <li data-target="#demo" data-slide-to="1"></li>
+     <li data-target="#demo" data-slide-to="2"></li>
+     <li data-target="#demo" data-slide-to="3"></li>
+     <li data-target="#demo" data-slide-to="4"></li>
+     <li data-target="#demo" data-slide-to="5"></li>
+   </ul>
+
+   <div class="carousel-inner slide-text-box">
+
+     <div class="carousel-item active">
+          <p>"It feels like there are endless ways to use Evernote… Use it for school, work, life, and beyond."</p>
+     </div>
+
+     <div class="carousel-item">
+        <p>"Listed in the Collaboration Software category for the 2016 and 2017 Forbes Cloud 100, which recognizes the best and brightest of the cloud."</p>
+     </div>
+
+     <div class="carousel-item">
+        <p>"It feels like there are endless ways to use Evernote… Use it for school, work, life, and beyond."</p>
+     </div>
+
+     <div class="carousel-item">
+       <p>"You can even send emails to Evernote and gather all of the things you need in a single place."</p>
+     </div>
+
+     <div class="carousel-item">
+       <p>"Winner of seven Webby awards since 2010, including the 2018 People’s Voice Award for Productivity."</p>
+     </div>
+
+     <div class="carousel-item">
+       <p>"It feels like there are endless ways to use Evernote… Use it for school, work, life, and beyond."</p>
+     </div>
+
+   </div>
+
+ </div>
 
 </section>
 
