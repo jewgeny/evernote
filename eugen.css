@@ -60,8 +60,17 @@ nav div:last-of-type div .dropdown:hover .dropdown-content {
   width: auto;
   grid-template-columns: auto auto auto;
   grid-auto-rows: auto;
-  grid-template-areas: 'basic . compare' 'premium . contact ' 'business . .';
   cursor: pointer;
+  grid-template-areas: 'basic . compare' 'premium . compare ' 'business . compare';
+}
+
+nav div:last-of-type div .dropdown:hover .dropdown-content2 {
+  display: grid;
+  width: auto;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;
+  cursor: pointer;
+  grid-template-areas: 'basic . compare' 'premium . contact ' 'business . .';
 }
 
 nav div:last-of-type div .dropdown button {
@@ -80,11 +89,22 @@ nav div:last-of-type div .dropdown .dropbtn {
 
 nav div:last-of-type div .dropdown-content {
   display: none;
+  margin-top: 1.3vw;
   padding: 0.5vw;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  border-radius: .5vw;
+}
+
+nav div:last-of-type div .dropdown-content:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 18px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #f9f9f9;
 }
 
 nav div:last-of-type div .dropdown-content div {
@@ -92,6 +112,7 @@ nav div:last-of-type div .dropdown-content div {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: .5vw;
 }
 
 nav div:last-of-type div .dropdown-content div:nth-of-type(1) {
@@ -156,6 +177,96 @@ nav div:last-of-type div .dropdown-content div div.box1 span {
   width: 10vw;
 }
 
+nav div:last-of-type div .dropdown-content2 {
+  display: none;
+  margin-top: 1.3vw;
+  padding: 0.5vw;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: .5vw;
+}
+
+nav div:last-of-type div .dropdown-content2:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 18px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #f9f9f9;
+}
+
+nav div:last-of-type div .dropdown-content2 div {
+  padding: 1vw 0.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: .5vw;
+}
+
+nav div:last-of-type div .dropdown-content2 div:nth-of-type(1) {
+  grid-area: basic;
+}
+
+nav div:last-of-type div .dropdown-content2 div:nth-of-type(2) {
+  grid-area: premium;
+}
+
+nav div:last-of-type div .dropdown-content2 div:nth-of-type(3) {
+  grid-area: business;
+}
+
+nav div:last-of-type div .dropdown-content2 div:nth-of-type(4) {
+  grid-area: compare;
+}
+
+nav div:last-of-type div .dropdown-content2 div:nth-of-type(5) {
+  grid-area: contact;
+}
+
+nav div:last-of-type div .dropdown-content2 div:hover {
+  background-color: green;
+}
+
+nav div:last-of-type div .dropdown-content2 div:hover i {
+  color: white;
+}
+
+nav div:last-of-type div .dropdown-content2 div:hover div.box1 p {
+  color: white;
+}
+
+nav div:last-of-type div .dropdown-content2 div:hover div.box1 span {
+  color: white;
+}
+
+nav div:last-of-type div .dropdown-content2 div i {
+  font-size: 3vw;
+  color: green;
+}
+
+nav div:last-of-type div .dropdown-content2 div div.box1 {
+  margin-left: 1vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div:last-of-type div .dropdown-content2 div div.box1 p {
+  text-transform: uppercase;
+  color: green;
+  font-size: 1vw;
+  width: 10vw;
+  margin: 0;
+}
+
+nav div:last-of-type div .dropdown-content2 div div.box1 span {
+  font-size: 0.8vw;
+  color: green;
+  width: 10vw;
+}
+
 nav div:last-of-type div a {
   font-weight: bold;
   margin: 0 1.5vw;
@@ -174,14 +285,17 @@ nav div:last-of-type div.box-right {
 nav div:last-of-type div.box-right a {
   font-weight: normal;
   text-decoration: none;
+  margin: 0;
 }
 
 nav div:last-of-type div.box-right span {
-  margin: 0 1vw;
+  margin: 0 2vw;
+  text-align: center;
 }
 
 nav div:last-of-type div.box-right button {
   border: 2px solid #33cc33;
+  margin: 0;
   background-color: white;
   padding: 0.5vw 2.5vw;
   cursor: pointer;
@@ -199,7 +313,7 @@ nav div:last-of-type div.box-right button:hover {
 
 .header div.bg-grey {
   background-color: #f5f5f0;
-  margin: 5vw 0;
+  margin: 3vw 0;
 }
 
 .header div.bg-grey p {
@@ -208,15 +322,34 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .header img {
-  margin: 6vw 0;
+  margin: 4vw 0;
 }
 
 .homepage {
   padding: 3vw 0;
 }
 
+@media screen and (max-width: 800px) {
+  .homepage div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .homepage div img {
+    width: 40vw;
+  }
+}
+
 .homepage div div h2 {
   font-size: 3vw;
+}
+
+@media screen and (max-width: 650px) {
+  .homepage div div h2 {
+    margin-top: 5vw;
+    font-size: 5vw;
+  }
 }
 
 .homepage div div h3 {
@@ -225,10 +358,24 @@ nav div:last-of-type div.box-right button:hover {
   margin-bottom: 3vw;
 }
 
+@media screen and (max-width: 650px) {
+  .homepage div div h3 {
+    font-size: 5vw;
+    margin: 4vw 0;
+    line-height: 6vw;
+  }
+}
+
 .homepage div div span {
   font-weight: bold;
   color: green;
   cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .homepage div div span {
+    font-size: 4vw;
+  }
 }
 
 .homepage div div span:hover {
@@ -255,22 +402,22 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .slideshow img:nth-child(1) {
-  animation: pulse 5s linear;
+  animation: pulse 1s linear;
   animation-delay: 1s;
 }
 
 .slideshow img:nth-child(2) {
-  animation: pulse 5s linear;
+  animation: pulse 2s linear;
   animation-delay: 2s;
 }
 
 .slideshow img:nth-child(3) {
-  animation: pulse 5s linear;
+  animation: pulse 3s linear;
   animation-delay: 3s;
 }
 
 .slideshow img:nth-child(4) {
-  animation: pulse 5s linear;
+  animation: pulse 4s linear;
   animation-delay: 4s;
 }
 
@@ -280,7 +427,7 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .slideshow img:nth-child(6) {
-  animation: pulse 5s linear;
+  animation: pulse 6s linear;
   animation-delay: 6s;
 }
 
@@ -304,9 +451,35 @@ nav div:last-of-type div.box-right button:hover {
   font-size: 3vw;
 }
 
+@media screen and (max-width: 600px) {
+  .four-div h2 {
+    font-size: 7vw;
+  }
+}
+
+.four-div button {
+  margin-top: 5vw;
+  font-weight: bold;
+  background-color: #29a329;
+  border-radius: .5vw;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.four-div button:hover {
+  background-color: #33cc33;
+}
+
 .four-div div div div {
   background-color: #f5f5f0;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .four-div div div div {
+    margin: 2vw 0;
+  }
 }
 
 .four-div div div div img {
@@ -319,6 +492,20 @@ nav div:last-of-type div.box-right button:hover {
   margin: 1vw 0;
 }
 
+@media screen and (max-width: 800px) {
+  .four-div div div div h2 {
+    margin-top: 2vw;
+    font-size: 5vw;
+  }
+}
+
 .four-div div div div p {
   line-height: 2.5vw;
+}
+
+@media screen and (max-width: 800px) {
+  .four-div div div div p {
+    line-height: 5vw;
+    margin: 3vw 0;
+  }
 }

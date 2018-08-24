@@ -4,6 +4,7 @@
 }
 
 $bg-grey: #f5f5f0;
+$count: 10;
 
 @keyframes pulse {
   0% {opacity: 0.4;}
@@ -22,10 +23,7 @@ $bg-grey: #f5f5f0;
 
 }
 
-
-
 nav{
-  // position: fixed!important;
   background-color: white;
   width: 100%;
   padding:0!important;
@@ -51,17 +49,27 @@ nav{
          margin: 0!important;
 
           &:hover .dropdown-content {
-            // display: flex;
-            // flex-direction: column;
             display: grid;
             width: auto;
             grid-template-columns: auto auto auto;
             grid-auto-rows: auto;
+            cursor: pointer;
+            grid-template-areas: 'basic . compare'
+                                 'premium . compare '
+                                 'business . compare'
+                                  ;
+          }
+
+          &:hover .dropdown-content2 {
+            display: grid;
+            width: auto;
+            grid-template-columns: auto auto auto;
+            grid-auto-rows: auto;
+            cursor: pointer;
             grid-template-areas: 'basic . compare'
                                  'premium . contact '
                                  'business . .'
                                   ;
-            cursor: pointer;
           }
 
          button{
@@ -71,26 +79,40 @@ nav{
              font-size: 0.8vw;
            }
          }
-            .dropbtn {
-                border: none;
-                outline: none;
-                background-color: inherit;
-                }
-          }
+
+          .dropbtn {
+             border: none;
+             outline: none;
+             background-color: inherit;
+           }
+        }
 
 
          .dropdown-content {
           display: none;
+          margin-top: 1.3vw;
           padding: 0.5vw;
           position: absolute;
           background-color: #f9f9f9;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
+          border-radius: .5vw;
+
+          &:before {
+             content:"";
+             position: absolute;
+             top: -20px;
+             left: 18px;
+             border-left: 15px solid transparent;
+             border-right: 15px solid transparent;
+             border-bottom: 20px solid #f9f9f9;
+          }
+
           div {
              padding: 1vw 0.5vw;
              display: flex;
              flex-direction: row;
              align-items: center;
+             border-radius: .5vw;
 
 
              &:nth-of-type(1){
@@ -162,7 +184,103 @@ nav{
              }
           }
 
+          .dropdown-content2 {
+           display: none;
+           margin-top: 1.3vw;
+           padding: 0.5vw;
+           position: absolute;
+           background-color: #f9f9f9;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           border-radius: .5vw;
 
+           &:before {
+              content:"";
+              position: absolute;
+              top: -20px;
+              left: 18px;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 20px solid #f9f9f9;
+            }
+
+           div {
+              padding: 1vw 0.5vw;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              border-radius: .5vw;
+
+
+              &:nth-of-type(1){
+                grid-area: basic;
+              }
+
+              &:nth-of-type(2){
+                grid-area: premium;
+              }
+
+              &:nth-of-type(3){
+                grid-area: business;
+              }
+
+              &:nth-of-type(4){
+                grid-area: compare;
+
+
+              }
+
+              &:nth-of-type(5){
+                grid-area: contact;
+              }
+
+              &:hover{
+               background-color: green;
+               i{
+                   color:white;
+                }
+
+                div.box1 p{
+                  color: white;
+                }
+
+                div.box1 span{
+                  color: white;
+                }
+
+              }
+
+              i{
+                font-size: 3vw;
+                color: green;
+
+              }
+
+              div.box1{
+                margin-left: 1vw;
+                margin-right: 3vw;
+                display: flex;
+                flex-direction: column;
+
+                 p{
+                   text-transform: uppercase;
+                   color: green;
+                   font-size: 1vw;
+                   width:10vw;
+                   margin: 0;
+                 }
+
+                 span{
+                   font-size: 0.8vw;
+                   color: green;
+                   width:10vw;
+
+                 }
+
+             }
+
+
+           }
+        }
 
         a{
           font-weight: bold;
@@ -173,10 +291,7 @@ nav{
           &:hover{
             color: lighten(green, 5%);
           }
-
-
         }
-
      }
 
      div.box-right{
@@ -185,14 +300,17 @@ nav{
          a{
          font-weight: normal;
          text-decoration: none;
+         margin:0;
         }
 
         span{
-          margin: 0 1vw;
+          margin: 0 2vw;
+          text-align: center;
         }
 
         button{
           border: 2px solid #33cc33;
+          margin:0;
           background-color: white;
           padding: 0.5vw 2.5vw;
           cursor: pointer;
@@ -214,7 +332,7 @@ nav{
 
    div.bg-grey{
        background-color: $bg-grey;
-       margin: 5vw 0;
+       margin: 3vw 0;
 
           p{
              font-size: 2.2vw;
@@ -224,7 +342,7 @@ nav{
    }
 
     img{
-      margin: 6vw 0;
+      margin: 4vw 0;
   }
 }
 
@@ -232,22 +350,43 @@ nav{
   padding: 3vw 0;
 
   div{
+    @media screen and (max-width: 800px){
+    text-align: center;
+    }
+    img{
+      @media screen and (max-width: 800px){
+        width:40vw;
+      }
+    }
     div{
 
       h2{
         font-size: 3vw;
+        @media screen and (max-width: 650px){
+          margin-top:5vw;
+          font-size: 5vw;
+        }
       }
 
       h3{
         font-size: 1.8vw;
         line-height: 3vw;
         margin-bottom: 3vw;
+        @media screen and (max-width: 650px){
+          font-size: 5vw;
+          margin:4vw 0;
+          line-height: 6vw;
+        }
       }
 
       span{
         font-weight: bold;
         color: green;
         cursor: pointer;
+
+        @media screen and (max-width: 650px){
+          font-size: 4vw;
+        }
 
         &:hover{
           color: lighten(green, 10%);
@@ -273,11 +412,9 @@ img{
 
   @for $i from 1 to 7 {
     &:nth-child(#{$i}){
-      animation: pulse 5s linear;
+      animation: pulse #{$i}s linear;
       animation-delay: #{$i}s;
-
-
-         }
+  }
  }
 
     cursor: pointer;
@@ -303,6 +440,22 @@ img{
   h2{
     margin: 5vw 0;
     font-size: 3vw;
+    @media screen and (max-width: 600px){
+      font-size: 7vw;
+    }
+  }
+
+  button{
+    margin-top: 5vw;
+    font-weight: bold;
+    background-color: #29a329;
+    border-radius: .5vw;
+    border: none;
+    color: white;
+    cursor: pointer;
+    &:hover{
+      background-color: lighten(#29a329, 10%);
+    }
   }
 
 div{
@@ -310,6 +463,9 @@ div{
     div{
       background-color: $bg-grey;
       text-align: center;
+      @media screen and (max-width: 800px){
+        margin:2vw 0;
+      }
       img{
         width: 30%;
         margin:0 auto;
@@ -317,9 +473,17 @@ div{
       h2{
         font-size: 1.5vw;
         margin:1vw 0;
+        @media screen and (max-width: 800px){
+          margin-top: 2vw;
+          font-size: 5vw;
+        }
       }
       p{
         line-height: 2.5vw;
+        @media screen and (max-width: 800px){
+          line-height: 5vw;
+          margin:3vw 0;
+        }
       }
     }
   }
