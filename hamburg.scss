@@ -2,40 +2,45 @@
     background-color: #00a82d;
 
 
-    div.main{
-      display:flex;
+    div.container{
+      display: flex;
       flex-direction: row;
-      justify-content: center;
+      padding: 10vw 0vw;
 
       div:first-of-type{
         display:flex;
         flex-direction: column;
-        padding: 1.5vw 0.5vw;
-        margin: 2vw 4vw;
+        justify-content: space-between;
+        padding: 1.5vw 2vw;
+        margin: 2vw 0vw;
         width:40vw;
-        justify-content: left;
         h2,p{
           color:#fff;
+
+        }
+        h2{
+          font-size: 4vw;
         }
         button{
           color: green;
-          padding: 1.5vw 0.5vw;
           width: 50%;
-          font-size: 1.5vw;
+          font-size: 2vw;
           background-color: #fff;
-          border-radius: 0.5vw;
+          border-radius: 0.3vw;
        }
 
       }
       div:last-of-type{
         display: flex;
         flex-direction: column;
-        padding: 1.5vw 0.5vw;
-        margin: 2vw 4vw;
+        justify-content: space-between;
+        padding: 1.5vw 7vw;
+        margin: 2vw;
         width:40vw;
         border:5px;
         h2{
           color:#fff;
+          font-size: 4vw;
         }
         img{
           width:30vw;

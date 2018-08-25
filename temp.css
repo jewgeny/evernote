@@ -4,15 +4,14 @@
 
 .hamburg_home div.container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   padding: 10vw 0vw;
 }
 
 .hamburg_home div.container div:first-of-type {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5vw 2vw;
+  padding: 1.5vw 0.3vw;
   margin: 2vw 0vw;
   width: 40vw;
 }
@@ -21,23 +20,18 @@
   color: #fff;
 }
 
-.hamburg_home div.container div:first-of-type h2 {
-  font-size: 4vw;
-}
-
 .hamburg_home div.container div:first-of-type button {
   color: green;
   width: 50%;
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: #fff;
-  border-radius: 0.3vw;
+  border-radius: 0.5vw;
 }
 
 .hamburg_home div.container div:last-of-type {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5vw 7vw;
+  padding: 1.5vw 0.3vw;
   margin: 2vw;
   width: 40vw;
   border: 5px;
@@ -45,7 +39,6 @@
 
 .hamburg_home div.container div:last-of-type h2 {
   color: #fff;
-  font-size: 4vw;
 }
 
 .hamburg_home div.container div:last-of-type img {
