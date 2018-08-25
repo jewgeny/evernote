@@ -1,0 +1,181 @@
+.limited {
+  display: flex;
+  justify-content: center;
+  padding: 7vw 0;
+}
+
+.limited .div1 {
+  width: 40%;
+  margin-left: 7vw;
+}
+
+.limited .div1 h3 {
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.limited .div1 p {
+  color: black;
+  font-size: 2vw;
+  line-height: 3vw;
+  letter-spacing: 1px;
+  padding-top: 1vw;
+}
+
+.limited .div1 button {
+  background: green;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  border: none;
+  padding: 1vw 2vw;
+  color: white;
+  margin-top: 2vw;
+  border-radius: 0.5vw;
+}
+
+.limited .div1 button:hover {
+  background: #005c00;
+}
+
+.limited .div2 {
+  width: 35vw;
+  height: 15vw;
+  margin: 5vw 0;
+  margin-right: 7vw;
+  margin-left: 2vw;
+  background-image: url(../images/discount.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+section .div3 {
+  height: 40vw;
+  width: 50%;
+  margin-right: 4vw;
+}
+
+section .div3 p {
+  text-align: center;
+  color: green;
+  font-size: 4vw;
+  direction: ltr;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+section .div3 h5 {
+  font-size: 2vw;
+  word-spacing: 3px;
+  line-height: 4.3vw;
+}
+
+section .div3 a {
+  text-decoration: none;
+  color: green;
+  margin: 0 2vw;
+}
+
+section .div3 a:hover {
+  color: #00cd00;
+}
+
+section .div4 {
+  height: 40vw;
+  width: 50%;
+  background-image: url(../images/homepage-remember-everything.png);
+  background-repeat: no-repeat;
+  background-size: 55% 60%;
+  background-position: right;
+  margin-right: 10vw;
+}
+
+.section6 {
+  height: auto;
+}
+
+.section6 p {
+  font-size: 4.2vw;
+  font-weight: bold;
+  margin: 0 auto;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.section10 {
+  padding: 5vw 0;
+  text-align: center;
+}
+
+.section10 .center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section10 .center div {
+  width: 27vw;
+}
+
+.section10 .center div p {
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 18vw;
+}
+
+.section10 .center div:nth-of-type(1) {
+  height: 22vw;
+  background-image: url(../images/web-clipping.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}
+
+.section10 .center div:nth-of-type(2) {
+  height: 22vw;
+  background-image: url(../images/multi-device-sync.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}
+
+.section10 .center div:nth-of-type(3) {
+  height: 22vw;
+  background-image: url(../images/search-handwriting.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}
+
+.section10 .center div:nth-of-type(4) {
+  height: 22vw;
+  background-image: url(../images/notebooks-tags.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}
+
+.section10 .center div:nth-of-type(5) {
+  height: 22vw;
+  background-image: url(../images/doc-icon.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}
+
+.section10 .center div:nth-of-type(6) {
+  height: 22vw;
+  background-image: url(../images/pdf-document-search.png);
+  background-repeat: no-repeat;
+  background-size: 45% 45%;
+  background-position: center;
+}

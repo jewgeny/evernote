@@ -33,13 +33,17 @@ nav {
   padding: 0 !important;
 }
 
-nav div img {
+nav .nav-box-left {
+  margin-left: 4vw;
+}
+
+nav .nav-box-left img {
   width: 15vw;
   cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-  nav div img {
+  nav .nav-box-left img {
     width: 35vw;
   }
 }
@@ -268,6 +272,10 @@ nav div:last-of-type div a:hover {
   color: #009a00;
 }
 
+nav div:last-of-type div.box-right {
+  margin-right: 4vw;
+}
+
 nav div:last-of-type div.box-right a {
   font-weight: normal;
   text-decoration: none;
@@ -312,7 +320,7 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .homepage {
-  padding: 3vw 0;
+  padding: 5vw 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -339,6 +347,7 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 .homepage div div h3 {
+  margin: 2vw 0;
   font-size: 1.8vw;
   line-height: 3vw;
   margin-bottom: 3vw;
