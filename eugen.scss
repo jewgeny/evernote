@@ -58,7 +58,7 @@ nav{
                                  'premium . compare '
                                  'business . compare'
                                   ;
-          }
+           }
 
           &:hover .dropdown-content2 {
             display: grid;
@@ -72,21 +72,13 @@ nav{
                                   ;
           }
 
-         button{
-           font-weight: bold;
+         a{
+        
 
            i{
              font-size: 0.8vw;
            }
          }
-
-          .dropbtn {
-             border: none;
-             outline: none;
-             background-color: inherit;
-           }
-        }
-
 
          .dropdown-content {
           display: none;
@@ -129,8 +121,6 @@ nav{
 
              &:nth-of-type(4){
                grid-area: compare;
-
-
              }
 
              &:nth-of-type(5){
@@ -275,12 +265,13 @@ nav{
                    width:10vw;
 
                  }
-
              }
-
-
            }
-        }
+         }
+      }
+
+
+
 
         a{
           font-weight: bold;
@@ -295,8 +286,6 @@ nav{
      }
 
      div.box-right{
-       margin-right: 3vw;
-
          a{
          font-weight: normal;
          text-decoration: none;
@@ -319,12 +308,9 @@ nav{
             border-color: lighten(green, 20%);
           }
         }
-
+      }
     }
-
- }
-
-}
+  }
 
 .header {
   padding: 5vw 0;

@@ -73,21 +73,11 @@ nav div:last-of-type div .dropdown:hover .dropdown-content2 {
   grid-template-areas: 'basic . compare' 'premium . contact ' 'business . .';
 }
 
-nav div:last-of-type div .dropdown button {
-  font-weight: bold;
-}
-
-nav div:last-of-type div .dropdown button i {
+nav div:last-of-type div .dropdown a i {
   font-size: 0.8vw;
 }
 
-nav div:last-of-type div .dropdown .dropbtn {
-  border: none;
-  outline: none;
-  background-color: inherit;
-}
-
-nav div:last-of-type div .dropdown-content {
+nav div:last-of-type div .dropdown .dropdown-content {
   display: none;
   margin-top: 1.3vw;
   padding: 0.5vw;
@@ -97,7 +87,7 @@ nav div:last-of-type div .dropdown-content {
   border-radius: .5vw;
 }
 
-nav div:last-of-type div .dropdown-content:before {
+nav div:last-of-type div .dropdown .dropdown-content:before {
   content: "";
   position: absolute;
   top: -20px;
@@ -107,7 +97,7 @@ nav div:last-of-type div .dropdown-content:before {
   border-bottom: 20px solid #f9f9f9;
 }
 
-nav div:last-of-type div .dropdown-content div {
+nav div:last-of-type div .dropdown .dropdown-content div {
   padding: 1vw 0.5vw;
   display: flex;
   flex-direction: row;
@@ -115,55 +105,55 @@ nav div:last-of-type div .dropdown-content div {
   border-radius: .5vw;
 }
 
-nav div:last-of-type div .dropdown-content div:nth-of-type(1) {
+nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(1) {
   grid-area: basic;
 }
 
-nav div:last-of-type div .dropdown-content div:nth-of-type(2) {
+nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(2) {
   grid-area: premium;
 }
 
-nav div:last-of-type div .dropdown-content div:nth-of-type(3) {
+nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(3) {
   grid-area: business;
 }
 
-nav div:last-of-type div .dropdown-content div:nth-of-type(4) {
+nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(4) {
   grid-area: compare;
 }
 
-nav div:last-of-type div .dropdown-content div:nth-of-type(5) {
+nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(5) {
   grid-area: contact;
 }
 
-nav div:last-of-type div .dropdown-content div:hover {
+nav div:last-of-type div .dropdown .dropdown-content div:hover {
   background-color: green;
 }
 
-nav div:last-of-type div .dropdown-content div:hover i {
+nav div:last-of-type div .dropdown .dropdown-content div:hover i {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content div:hover div.box1 p {
+nav div:last-of-type div .dropdown .dropdown-content div:hover div.box1 p {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content div:hover div.box1 span {
+nav div:last-of-type div .dropdown .dropdown-content div:hover div.box1 span {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content div i {
+nav div:last-of-type div .dropdown .dropdown-content div i {
   font-size: 3vw;
   color: green;
 }
 
-nav div:last-of-type div .dropdown-content div div.box1 {
+nav div:last-of-type div .dropdown .dropdown-content div div.box1 {
   margin-left: 1vw;
   margin-right: 3vw;
   display: flex;
   flex-direction: column;
 }
 
-nav div:last-of-type div .dropdown-content div div.box1 p {
+nav div:last-of-type div .dropdown .dropdown-content div div.box1 p {
   text-transform: uppercase;
   color: green;
   font-size: 1vw;
@@ -171,13 +161,13 @@ nav div:last-of-type div .dropdown-content div div.box1 p {
   margin: 0;
 }
 
-nav div:last-of-type div .dropdown-content div div.box1 span {
+nav div:last-of-type div .dropdown .dropdown-content div div.box1 span {
   font-size: 0.8vw;
   color: green;
   width: 10vw;
 }
 
-nav div:last-of-type div .dropdown-content2 {
+nav div:last-of-type div .dropdown .dropdown-content2 {
   display: none;
   margin-top: 1.3vw;
   padding: 0.5vw;
@@ -187,7 +177,7 @@ nav div:last-of-type div .dropdown-content2 {
   border-radius: .5vw;
 }
 
-nav div:last-of-type div .dropdown-content2:before {
+nav div:last-of-type div .dropdown .dropdown-content2:before {
   content: "";
   position: absolute;
   top: -20px;
@@ -197,7 +187,7 @@ nav div:last-of-type div .dropdown-content2:before {
   border-bottom: 20px solid #f9f9f9;
 }
 
-nav div:last-of-type div .dropdown-content2 div {
+nav div:last-of-type div .dropdown .dropdown-content2 div {
   padding: 1vw 0.5vw;
   display: flex;
   flex-direction: row;
@@ -205,55 +195,55 @@ nav div:last-of-type div .dropdown-content2 div {
   border-radius: .5vw;
 }
 
-nav div:last-of-type div .dropdown-content2 div:nth-of-type(1) {
+nav div:last-of-type div .dropdown .dropdown-content2 div:nth-of-type(1) {
   grid-area: basic;
 }
 
-nav div:last-of-type div .dropdown-content2 div:nth-of-type(2) {
+nav div:last-of-type div .dropdown .dropdown-content2 div:nth-of-type(2) {
   grid-area: premium;
 }
 
-nav div:last-of-type div .dropdown-content2 div:nth-of-type(3) {
+nav div:last-of-type div .dropdown .dropdown-content2 div:nth-of-type(3) {
   grid-area: business;
 }
 
-nav div:last-of-type div .dropdown-content2 div:nth-of-type(4) {
+nav div:last-of-type div .dropdown .dropdown-content2 div:nth-of-type(4) {
   grid-area: compare;
 }
 
-nav div:last-of-type div .dropdown-content2 div:nth-of-type(5) {
+nav div:last-of-type div .dropdown .dropdown-content2 div:nth-of-type(5) {
   grid-area: contact;
 }
 
-nav div:last-of-type div .dropdown-content2 div:hover {
+nav div:last-of-type div .dropdown .dropdown-content2 div:hover {
   background-color: green;
 }
 
-nav div:last-of-type div .dropdown-content2 div:hover i {
+nav div:last-of-type div .dropdown .dropdown-content2 div:hover i {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content2 div:hover div.box1 p {
+nav div:last-of-type div .dropdown .dropdown-content2 div:hover div.box1 p {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content2 div:hover div.box1 span {
+nav div:last-of-type div .dropdown .dropdown-content2 div:hover div.box1 span {
   color: white;
 }
 
-nav div:last-of-type div .dropdown-content2 div i {
+nav div:last-of-type div .dropdown .dropdown-content2 div i {
   font-size: 3vw;
   color: green;
 }
 
-nav div:last-of-type div .dropdown-content2 div div.box1 {
+nav div:last-of-type div .dropdown .dropdown-content2 div div.box1 {
   margin-left: 1vw;
   margin-right: 3vw;
   display: flex;
   flex-direction: column;
 }
 
-nav div:last-of-type div .dropdown-content2 div div.box1 p {
+nav div:last-of-type div .dropdown .dropdown-content2 div div.box1 p {
   text-transform: uppercase;
   color: green;
   font-size: 1vw;
@@ -261,7 +251,7 @@ nav div:last-of-type div .dropdown-content2 div div.box1 p {
   margin: 0;
 }
 
-nav div:last-of-type div .dropdown-content2 div div.box1 span {
+nav div:last-of-type div .dropdown .dropdown-content2 div div.box1 span {
   font-size: 0.8vw;
   color: green;
   width: 10vw;
@@ -276,10 +266,6 @@ nav div:last-of-type div a {
 
 nav div:last-of-type div a:hover {
   color: #009a00;
-}
-
-nav div:last-of-type div.box-right {
-  margin-right: 3vw;
 }
 
 nav div:last-of-type div.box-right a {
