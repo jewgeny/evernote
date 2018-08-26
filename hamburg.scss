@@ -1,18 +1,26 @@
+%flex{
+  display:flex;
+  flex-direction: column;
+}
+
+
 .hamburg_home{
     background-color: #00a82d;
 
 
     div.container{
-      display: flex;
+      @extend %flex;
       flex-direction: row;
+      justify-content: space-between;
+
       padding: 10vw 0vw;
+      margin: 1vw 1vw;
 
       div:first-of-type{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @extend %flex;
+
         padding: 1.5vw 2vw;
-        margin: 2vw 0vw;
+        margin: 2vw 1.5vw;
         width:40vw;
         h2,p{
           color:#fff;
@@ -31,21 +39,18 @@
 
       }
       div:last-of-type{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @extend %flex;
         padding: 1.5vw 7vw;
-        margin: 2vw;
-        width:40vw;
+        margin: 2vw 2vw;
+        width:30vw;
         border:5px;
+        align-self: flex-start;
         h2{
           color:#fff;
           font-size: 4vw;
         }
         img{
-          width:30vw;
-
-
+          width:35vw;
         }
 
       }
