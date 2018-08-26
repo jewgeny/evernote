@@ -325,33 +325,46 @@ nav{
              font-size: 2.2vw;
              color: grey;
            }
-
    }
 
     img{
       margin: 4vw 0;
-  }
+    }
+
+    h2{
+      font-weight: 600;
+      font-size: 3vw;
+
+      @media screen and (max-width: 600px){
+        font-size: 5vw;
+      }
+    }
 }
 
 .homepage{
   padding: 5vw 0;
 
   div{
-    @media screen and (max-width: 800px){
-    text-align: center;
-    }
+    // @media screen and (max-width: 800px){
+    // text-align: center;
+    // }
     img{
-      @media screen and (max-width: 800px){
-        width:40vw;
+      @media screen and (max-width: 600px){
+        width:60vw;
+        margin:0 auto;
+        display: block;
+        margin-top: 10vw;
       }
     }
     div{
 
       h2{
         font-size: 3vw;
-        @media screen and (max-width: 650px){
+        color: green;
+        @media screen and (max-width: 600px){
           margin-top:5vw;
           font-size: 5vw;
+          margin-left: 4vw;
         }
       }
 
@@ -360,20 +373,24 @@ nav{
         font-size: 1.8vw;
         line-height: 3vw;
         margin-bottom: 3vw;
-        @media screen and (max-width: 650px){
+
+        @media screen and (max-width: 600px){
           font-size: 5vw;
-          margin:4vw 0;
+          margin:5vw 0;
           line-height: 6vw;
+          margin-left: 4vw;
         }
       }
 
       span{
         font-weight: bold;
         color: green;
+        text-align: left;
         cursor: pointer;
 
-        @media screen and (max-width: 650px){
+        @media screen and (max-width: 600px){
           font-size: 4vw;
+          margin-left: 4vw;
         }
 
         &:hover{
@@ -497,4 +514,101 @@ div{
     }
   }
  }
+}
+
+.at-work{
+  padding: 5vw 0;
+
+  img{
+    margin-bottom: 3vw;
+
+    @media screen and (max-width: 600px){
+    margin-top:8vw;
+    }
+  }
+
+  h2{
+    font-size: 3vw;
+    margin: 3vw 0;
+    @media screen and (max-width: 600px){
+      font-size: 12vw;
+      margin: 10vw 0;
+    }
+  }
+
+  p{
+    font-size: 1.8vw;
+
+    @media screen and (max-width: 600px){
+      font-size: 8vw;
+    }
+  }
+}
+
+.brain{
+  padding: 5vw 0;
+
+  div{
+    div{
+      h2{
+        color: green;
+        font-size: 3vw;
+        text-align: left;
+       @media screen and (max-width: 600px){
+         font-size: 8vw;
+         text-align: left;
+         margin-left: 2vw;
+
+      }
+    }
+
+      p{
+        font-size: 1.8vw;
+        margin: 4vw 0;
+        text-align: left;
+
+
+        @media screen and (max-width: 600px){
+          font-size: 5vw;
+          margin-left: 2vw;
+       }
+      }
+
+      span{
+        font-weight: bold;
+        color: green;
+        cursor: pointer;
+        text-align: left;
+
+        @media screen and (max-width: 600px){
+          font-size: 4vw;
+          margin-left: 2vw;
+       }
+
+        @media screen and (max-width: 650px){
+          font-size: 4vw;
+        }
+
+        &:hover{
+          color: lighten(green, 10%);
+          i{
+            color: lighten(green, 10%);
+          }
+        }
+        i{
+          color: green;
+        }
+      }
+    }
+
+    div{
+
+       img{
+         @media screen and (max-width: 600px){
+           margin-top: 7vw;
+           width: 50vw;
+        }
+      }
+    }
+  }
 }

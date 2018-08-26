@@ -319,30 +319,40 @@ nav div:last-of-type div.box-right button:hover {
   margin: 4vw 0;
 }
 
+.header h2 {
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 600px) {
+  .header h2 {
+    font-size: 5vw;
+  }
+}
+
 .homepage {
   padding: 5vw 0;
 }
 
-@media screen and (max-width: 800px) {
-  .homepage div {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .homepage div img {
-    width: 40vw;
+    width: 60vw;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10vw;
   }
 }
 
 .homepage div div h2 {
   font-size: 3vw;
+  color: green;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .homepage div div h2 {
     margin-top: 5vw;
     font-size: 5vw;
+    margin-left: 4vw;
   }
 }
 
@@ -353,23 +363,26 @@ nav div:last-of-type div.box-right button:hover {
   margin-bottom: 3vw;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .homepage div div h3 {
     font-size: 5vw;
-    margin: 4vw 0;
+    margin: 5vw 0;
     line-height: 6vw;
+    margin-left: 4vw;
   }
 }
 
 .homepage div div span {
   font-weight: bold;
   color: green;
+  text-align: left;
   cursor: pointer;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .homepage div div span {
     font-size: 4vw;
+    margin-left: 4vw;
   }
 }
 
@@ -564,5 +577,111 @@ nav div:last-of-type div.box-right button:hover {
   .four-div div div div p {
     line-height: 5vw;
     margin: 3vw 0;
+  }
+}
+
+.at-work {
+  padding: 5vw 0;
+}
+
+.at-work img {
+  margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 600px) {
+  .at-work img {
+    margin-top: 8vw;
+  }
+}
+
+.at-work h2 {
+  font-size: 3vw;
+  margin: 3vw 0;
+}
+
+@media screen and (max-width: 600px) {
+  .at-work h2 {
+    font-size: 12vw;
+    margin: 10vw 0;
+  }
+}
+
+.at-work p {
+  font-size: 1.8vw;
+}
+
+@media screen and (max-width: 600px) {
+  .at-work p {
+    font-size: 8vw;
+  }
+}
+
+.brain {
+  padding: 5vw 0;
+}
+
+.brain div div h2 {
+  color: green;
+  font-size: 3vw;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .brain div div h2 {
+    font-size: 8vw;
+    text-align: left;
+    margin-left: 2vw;
+  }
+}
+
+.brain div div p {
+  font-size: 1.8vw;
+  margin: 4vw 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .brain div div p {
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+}
+
+.brain div div span {
+  font-weight: bold;
+  color: green;
+  cursor: pointer;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .brain div div span {
+    font-size: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .brain div div span {
+    font-size: 4vw;
+  }
+}
+
+.brain div div span:hover {
+  color: #00b300;
+}
+
+.brain div div span:hover i {
+  color: #00b300;
+}
+
+.brain div div span i {
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .brain div div img {
+    margin-top: 7vw;
+    width: 50vw;
   }
 }

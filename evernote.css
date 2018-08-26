@@ -4,9 +4,26 @@
   padding: 7vw 0;
 }
 
+@media screen and (max-width: 600px) {
+  .limited {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: ' div1 ' ' div2 ';
+  }
+}
+
 .limited .div1 {
   width: 40%;
   margin-left: 7vw;
+  grid-area: div1;
+}
+
+@media screen and (max-width: 800px) {
+  .limited .div1 {
+    width: 70%;
+    margin-left: 12vw;
+  }
 }
 
 .limited .div1 h3 {
@@ -14,6 +31,12 @@
   font-weight: bold;
   font-family: 'Sawarabi Mincho', sans-serif;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .limited .div1 h3 {
+    font-size: 7vw;
+  }
 }
 
 .limited .div1 p {
@@ -24,17 +47,32 @@
   padding-top: 1vw;
 }
 
+@media screen and (max-width: 800px) {
+  .limited .div1 p {
+    font-size: 5vw;
+    line-height: 7vw;
+    margin: 7vw 0;
+  }
+}
+
 .limited .div1 button {
   background: green;
   font-size: 1vw;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 auto;
   border: none;
   padding: 1vw 2vw;
   color: white;
   margin-top: 2vw;
   border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .limited .div1 button {
+    font-size: 5vw;
+    padding: 3vw 3vw;
+  }
 }
 
 .limited .div1 button:hover {
@@ -42,14 +80,23 @@
 }
 
 .limited .div2 {
+  grid-area: div2;
   width: 35vw;
   height: 15vw;
   margin: 5vw 0;
   margin-right: 7vw;
-  margin-left: 2vw;
+  margin-left: 10vw;
   background-image: url(../images/discount.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .limited .div2 {
+    width: 70vw;
+    height: 30vw;
+    margin-top: 10vw;
+  }
 }
 
 section {
