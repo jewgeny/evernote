@@ -334,6 +334,25 @@ nav div:last-of-type div.box-right button:hover {
   padding: 5vw 0;
 }
 
+.homepage .button-collobrate {
+  text-align: center;
+}
+
+.homepage .button-collobrate button {
+  margin-top: 6vw;
+  font-weight: bold;
+  background-color: #29a329;
+  border-radius: .5vw;
+  padding: 1vw 3vw;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.homepage .button-collobrate button:hover {
+  background-color: #33cc33;
+}
+
 @media screen and (max-width: 600px) {
   .homepage div img {
     width: 60vw;
@@ -546,26 +565,35 @@ nav div:last-of-type div.box-right button:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .four-div div div div {
     margin: 2vw 0;
   }
 }
 
 .four-div div div div img {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
-.four-div div div div h2 {
-  font-size: 1.5vw;
-  margin: 1vw 0;
+@media screen and (max-width: 600px) {
+  .four-div div div div img {
+    width: 30%;
+    margin-bottom: 5vw;
+  }
 }
 
-@media screen and (max-width: 800px) {
+.four-div div div div h2 {
+  font-size: 2vw;
+  margin: 1vw 0;
+  margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 600px) {
   .four-div div div div h2 {
     margin-top: 2vw;
-    font-size: 5vw;
+    font-size: 4vw;
+    font-weight: bold;
   }
 }
 
@@ -573,7 +601,7 @@ nav div:last-of-type div.box-right button:hover {
   line-height: 2.5vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .four-div div div div p {
     line-height: 5vw;
     margin: 3vw 0;
@@ -661,7 +689,7 @@ nav div:last-of-type div.box-right button:hover {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .brain div div span {
     font-size: 4vw;
   }

@@ -75,7 +75,7 @@
     margin:5vw 0;
     margin-right: 7vw;
     margin-left: 10vw;
-    background-image: url(../images/discount.png);
+    background-image: url(images/discount.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -90,70 +90,70 @@
 }
 
 
-section{
-  display: flex;
-
-  width: 100%;
-
-    .div3{
-
-    height: 40vw;
-      width: 50%;
-      margin-right:4vw;
-p{
-  text-align: center;
-  color:green;
-  font-size: 4vw;
-  direction: ltr;
-  word-spacing:3px;
-  letter-spacing:1px;
-}
-h5{
-  font-size: 2vw;
-  word-spacing: 3px;
-  line-height:4.3vw;
-}
-a{
-  text-decoration: none;
-  color:green;
-  margin: 0 2vw;
-
-  &:hover{
-  color:lighten(green, 15%);
-  }
-
-
-}
-
-}
-
-  .div4{
-
-    height:40vw;
-    width: 50%;
-    background-image: url(../images/homepage-remember-everything.png);
-    background-repeat: no-repeat;
-    background-size:55% 60%;
-    background-position: right;
-    margin-right: 10vw;
-
-  }
-
-}
-
- .section6{
-   height: auto;
-
-   p{
-     font-size: 4.2vw;
-     font-weight: bold;
-    margin: 0 auto;
-   font-family: 'Sawarabi Mincho', sans-serif;
-     color:black;
-
-   }
-
- }
+// section{
+//   display: flex;
+//
+//   width: 100%;
+//
+//     .div3{
+//
+//     height: 40vw;
+//       width: 50%;
+//       margin-right:4vw;
+// p{
+//   text-align: center;
+//   color:green;
+//   font-size: 4vw;
+//   direction: ltr;
+//   word-spacing:3px;
+//   letter-spacing:1px;
+// }
+// h5{
+//   font-size: 2vw;
+//   word-spacing: 3px;
+//   line-height:4.3vw;
+// }
+// a{
+//   text-decoration: none;
+//   color:green;
+//   margin: 0 2vw;
+//
+//   &:hover{
+//   color:lighten(green, 15%);
+//   }
+//
+//
+// }
+//
+// }
+//
+//   .div4{
+//
+//     height:40vw;
+//     width: 50%;
+//     background-image: url(../images/homepage-remember-everything.png);
+//     background-repeat: no-repeat;
+//     background-size:55% 60%;
+//     background-position: right;
+//     margin-right: 10vw;
+//
+//   }
+//
+// }
+//
+//  .section6{
+//    height: auto;
+//
+//    p{
+//      font-size: 4.2vw;
+//      font-weight: bold;
+//     margin: 0 auto;
+//    font-family: 'Sawarabi Mincho', sans-serif;
+//      color:black;
+//
+//    }
+//
+//  }
 
  .section10{
    padding: 5vw 0;
@@ -164,14 +164,30 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 
+    @media screen and (max-width: 600px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     div{
      width:27vw;
+
+     @media screen and (max-width: 600px){
+      width:50vw;
+     }
 
      p{
         font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
         margin-top: 18vw;
+
+        @media screen and (max-width: 600px){
+          margin-top: 43vw;
+          font-weight: bold;
+          font-size: 4vw;
+        }
       }
 
      @each $num,$img in (1,web-clipping),
@@ -182,10 +198,14 @@ a{
 
          &:nth-of-type(#{$num}){
          height: 22vw;
-         background-image: url(../images/#{$img}.png);
+         background-image: url(images/#{$img}.png);
          background-repeat: no-repeat;
          background-size: 45% 45%;
          background-position:center;
+
+         @media screen and (max-width: 600px){
+          height:50vw;
+         }
 
          }
       }

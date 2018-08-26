@@ -344,6 +344,25 @@ nav{
 .homepage{
   padding: 5vw 0;
 
+
+.button-collobrate{
+  text-align: center;
+    button{
+       margin-top: 6vw;
+       font-weight: bold;
+       background-color: #29a329;
+       border-radius: .5vw;
+       padding: 1vw 3vw;
+       border: none;
+       color: white;
+       cursor: pointer;
+         &:hover{
+         background-color: lighten(#29a329, 10%);
+     }
+    }
+  }
+
+
   div{
     // @media screen and (max-width: 800px){
     // text-align: center;
@@ -489,24 +508,31 @@ div{
     div{
       background-color: $bg-grey;
       text-align: center;
-      @media screen and (max-width: 800px){
+      @media screen and (max-width: 600px){
         margin:2vw 0;
       }
       img{
-        width: 30%;
+        width: 40%;
         margin:0 auto;
+
+        @media screen and (max-width: 600px){
+          width: 30%;
+          margin-bottom: 5vw;
+        }
       }
       h2{
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin:1vw 0;
-        @media screen and (max-width: 800px){
+        margin-bottom: 3vw;
+        @media screen and (max-width: 600px){
           margin-top: 2vw;
-          font-size: 5vw;
+          font-size: 4vw;
+          font-weight: bold;
         }
       }
       p{
         line-height: 2.5vw;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 600px){
           line-height: 5vw;
           margin:3vw 0;
         }
@@ -585,7 +611,7 @@ div{
           margin-left: 2vw;
        }
 
-        @media screen and (max-width: 650px){
+        @media screen and (max-width: 600px){
           font-size: 4vw;
         }
 

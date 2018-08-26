@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: ' div1 ' ' div2 ';
+    grid-template-areas: ' div1 ' ' div2 ';
   }
 }
 
@@ -86,7 +86,7 @@
   margin: 5vw 0;
   margin-right: 7vw;
   margin-left: 10vw;
-  background-image: url(../images/discount.png);
+  background-image: url(images/discount.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -97,64 +97,6 @@
     height: 30vw;
     margin-top: 10vw;
   }
-}
-
-section {
-  display: flex;
-  width: 100%;
-}
-
-section .div3 {
-  height: 40vw;
-  width: 50%;
-  margin-right: 4vw;
-}
-
-section .div3 p {
-  text-align: center;
-  color: green;
-  font-size: 4vw;
-  direction: ltr;
-  word-spacing: 3px;
-  letter-spacing: 1px;
-}
-
-section .div3 h5 {
-  font-size: 2vw;
-  word-spacing: 3px;
-  line-height: 4.3vw;
-}
-
-section .div3 a {
-  text-decoration: none;
-  color: green;
-  margin: 0 2vw;
-}
-
-section .div3 a:hover {
-  color: #00cd00;
-}
-
-section .div4 {
-  height: 40vw;
-  width: 50%;
-  background-image: url(../images/homepage-remember-everything.png);
-  background-repeat: no-repeat;
-  background-size: 55% 60%;
-  background-position: right;
-  margin-right: 10vw;
-}
-
-.section6 {
-  height: auto;
-}
-
-.section6 p {
-  font-size: 4.2vw;
-  font-weight: bold;
-  margin: 0 auto;
-  font-family: 'Sawarabi Mincho', sans-serif;
-  color: black;
 }
 
 .section10 {
@@ -168,8 +110,22 @@ section .div4 {
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .section10 .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .section10 .center div {
   width: 27vw;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div {
+    width: 50vw;
+  }
 }
 
 .section10 .center div p {
@@ -179,50 +135,94 @@ section .div4 {
   margin-top: 18vw;
 }
 
+@media screen and (max-width: 600px) {
+  .section10 .center div p {
+    margin-top: 43vw;
+    font-weight: bold;
+    font-size: 4vw;
+  }
+}
+
 .section10 .center div:nth-of-type(1) {
   height: 22vw;
-  background-image: url(../images/web-clipping.png);
+  background-image: url(images/web-clipping.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(1) {
+    height: 50vw;
+  }
 }
 
 .section10 .center div:nth-of-type(2) {
   height: 22vw;
-  background-image: url(../images/multi-device-sync.png);
+  background-image: url(images/multi-device-sync.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(2) {
+    height: 50vw;
+  }
 }
 
 .section10 .center div:nth-of-type(3) {
   height: 22vw;
-  background-image: url(../images/search-handwriting.png);
+  background-image: url(images/search-handwriting.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(3) {
+    height: 50vw;
+  }
 }
 
 .section10 .center div:nth-of-type(4) {
   height: 22vw;
-  background-image: url(../images/notebooks-tags.png);
+  background-image: url(images/notebooks-tags.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(4) {
+    height: 50vw;
+  }
 }
 
 .section10 .center div:nth-of-type(5) {
   height: 22vw;
-  background-image: url(../images/doc-icon.png);
+  background-image: url(images/doc-icon.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
 }
 
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(5) {
+    height: 50vw;
+  }
+}
+
 .section10 .center div:nth-of-type(6) {
   height: 22vw;
-  background-image: url(../images/pdf-document-search.png);
+  background-image: url(images/pdf-document-search.png);
   background-repeat: no-repeat;
   background-size: 45% 45%;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section10 .center div:nth-of-type(6) {
+    height: 50vw;
+  }
 }
