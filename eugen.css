@@ -315,6 +315,12 @@ nav div:last-of-type div.box-right button:hover {
   color: grey;
 }
 
+@media screen and (max-width: 600px) {
+  .header div.bg-grey p {
+    font-size: 7vw;
+  }
+}
+
 .header img {
   margin: 4vw 0;
 }
@@ -326,7 +332,8 @@ nav div:last-of-type div.box-right button:hover {
 
 @media screen and (max-width: 600px) {
   .header h2 {
-    font-size: 5vw;
+    font-size: 10vw;
+    margin: 8vw 0;
   }
 }
 
