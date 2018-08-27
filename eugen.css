@@ -74,7 +74,7 @@ nav div:last-of-type div .dropdown:hover .dropdown-content2 {
   grid-template-columns: auto auto auto;
   grid-auto-rows: auto;
   cursor: pointer;
-  grid-template-areas: 'basic . compare' 'premium . contact ' 'business . .';
+  grid-template-areas: 'basic compare' 'premium contact ' 'business .';
 }
 
 nav div:last-of-type div .dropdown a i {
@@ -430,7 +430,8 @@ nav div:last-of-type div.box-right button:hover {
 
 @media screen and (max-width: 600px) {
   .slideshow {
-    padding: 25vw 0 !important;
+    padding-top: 200vw !important;
+    padding-bottom: 110vw !important;
   }
 }
 
@@ -442,6 +443,14 @@ nav div:last-of-type div.box-right button:hover {
   width: 90vw;
 }
 
+@media screen and (max-width: 600px) {
+  .slideshow ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .slideshow ul li:nth-of-type(1) {
   width: 30vw;
   height: 5vw;
@@ -450,6 +459,14 @@ nav div:last-of-type div.box-right button:hover {
   background-size: 100% 100%;
   opacity: 0.4;
   margin: 0 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(1) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
 }
 
 .slideshow ul li:nth-of-type(1):hover {
@@ -466,6 +483,14 @@ nav div:last-of-type div.box-right button:hover {
   margin: 0 2vw;
 }
 
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(2) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
+}
+
 .slideshow ul li:nth-of-type(2):hover {
   opacity: 1;
 }
@@ -478,6 +503,14 @@ nav div:last-of-type div.box-right button:hover {
   background-size: 100% 100%;
   opacity: 0.4;
   margin: 0 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(3) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
 }
 
 .slideshow ul li:nth-of-type(3):hover {
@@ -494,6 +527,14 @@ nav div:last-of-type div.box-right button:hover {
   margin: 0 2vw;
 }
 
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(4) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
+}
+
 .slideshow ul li:nth-of-type(4):hover {
   opacity: 1;
 }
@@ -506,6 +547,14 @@ nav div:last-of-type div.box-right button:hover {
   background-size: 100% 100%;
   opacity: 0.4;
   margin: 0 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(5) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
 }
 
 .slideshow ul li:nth-of-type(5):hover {
@@ -522,6 +571,14 @@ nav div:last-of-type div.box-right button:hover {
   margin: 0 2vw;
 }
 
+@media screen and (max-width: 600px) {
+  .slideshow ul li:nth-of-type(6) {
+    margin: 5vw 0;
+    width: 60vw;
+    height: 20vw;
+  }
+}
+
 .slideshow ul li:nth-of-type(6):hover {
   opacity: 1;
 }
@@ -535,6 +592,12 @@ nav div:last-of-type div.box-right button:hover {
   font-size: 1.5vw;
   color: black;
   margin: 0 10vw;
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow .slide-text-box div p {
+    font-size: 7vw;
+  }
 }
 
 .four-div {
