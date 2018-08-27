@@ -430,8 +430,8 @@ nav div:last-of-type div.box-right button:hover {
 
 @media screen and (max-width: 600px) {
   .slideshow {
-    padding-top: 200vw !important;
-    padding-bottom: 110vw !important;
+    padding-top: 200vw;
+    padding-bottom: 110vw;
   }
 }
 
