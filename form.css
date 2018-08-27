@@ -1,9 +1,16 @@
 form {
   display: grid;
-  width: 100%;
   background-color: #00a82d;
   grid-template: repeat(9, auto)/repeat(6, 1fr);
   grid-gap: 0.2vw 0.5vw;
+  padding: 5vw 0;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 form button, form h4, form input, form p.policy {
@@ -18,6 +25,14 @@ form h2 {
   margin: 1vw 6vw;
 }
 
+@media screen and (max-width: 600px) {
+  form h2 {
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
 form p.description {
   grid-area: 6 / 1 / span 1 / span 4;
   font-size: 1.5vw;
@@ -26,12 +41,48 @@ form p.description {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  form p.description {
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 400;
+    margin: 5vw 0;
+  }
+}
+
+form button {
+  border: none;
+}
+
 form button.google {
   grid-area: 3 / 5 / span 1 / span 2;
   font-size: 1.5vw;
-  padding: 1vw 0.5vw;
+  font-weight: 400;
+  padding: .7vw 0;
   margin: 1vw 4vw;
   background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+form button.google img {
+  width: 1.5vw;
+  position: relative;
+  left: -1.8vw;
+}
+
+@media screen and (max-width: 600px) {
+  form button.google img {
+    width: 4vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form button.google {
+    padding: 3vw 0;
+    font-size: 3vw;
+    border-radius: 1vw;
+  }
 }
 
 form h4 {
@@ -39,23 +90,51 @@ form h4 {
   font-size: 1.5vw;
   text-align: center;
   padding: 1vw 0.5vw;
-  padding: 1vw 0.5vw;
+  padding: 1vw 0;
   margin: 0vw 4vw;
   color: white;
   border: 0;
 }
 
+@media screen and (max-width: 600px) {
+  form h4 {
+    font-size: 3vw;
+    margin: 2vw 0;
+  }
+}
+
+form input {
+  border: none;
+  padding: 1vw 1.5vw;
+}
+
+@media screen and (max-width: 600px) {
+  form input {
+    padding: 4vw 0;
+    border-radius: 1vw;
+  }
+  form input::placeholder {
+    font-size: 3vw;
+    font-weight: 500;
+    padding-left: 2vw;
+  }
+}
+
 form input[type="email"] {
   grid-area: 5 / 5 / span 1 / span 2;
   font-size: 1.5vw;
-  padding: 1vw 0.5vw;
   margin: 1vw 4vw;
+}
+
+@media screen and (max-width: 600px) {
+  form input[type="email"] {
+    margin-bottom: 2vw;
+  }
 }
 
 form input[type="password"] {
   grid-area: 6 / 5 / span 1 / span 2;
   font-size: 1.5vw;
-  padding: 0vw 0.5vw;
   margin: 1.3vw 4vw;
 }
 
@@ -63,14 +142,33 @@ form p {
   grid-area: 7 / 5 / span 1 / span 2;
   font-size: 1vw;
   margin: 0vw 4vw;
-  padding: 0.5vw 0.5vw;
+  padding: 0.5vw 0;
+  color: white;
 }
 
-form button {
+@media screen and (max-width: 600px) {
+  form p {
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
+}
+
+form button.last-button {
   grid-area: 8 / 5 / span 1 / span 2;
-  font-size: 1.5vw;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 1.3vw 0;
   margin: 1vw 4vw;
-  padding: 0.5vw 0.5vw;
   color: green;
   background-color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  form button.last-button {
+    padding: 3vw 0;
+    font-size: 3vw;
+    border-radius: 1vw;
+  }
 }
