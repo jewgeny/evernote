@@ -3,7 +3,6 @@
   flex-direction: column;
 }
 
-
 .hamburg_home{
     background-color: #00a82d;
 
@@ -12,13 +11,12 @@
       @extend %flex;
       flex-direction: row;
       justify-content: space-between;
-
       padding: 10vw 0vw;
       margin: 1vw 1vw;
-
+      flex:1 1 50%;
       div:first-of-type{
         @extend %flex;
-
+        justify-content: space-between;
         padding: 1.5vw 2vw;
         margin: 2vw 1.5vw;
         width:40vw;
@@ -52,7 +50,11 @@
         img{
           width:35vw;
         }
-
+      }
+      @media screen and (max-width: 480px){
+        .container{
+          flex-direction: column;
+        }
       }
     }
 }
