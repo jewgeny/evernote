@@ -12,6 +12,15 @@
   }
 }
 
+@keyframes close-menu {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100vw, 0);
+  }
+}
+
 @keyframes p-animation1 {
   0% {
     transform: translate(-100vw, 0);
@@ -48,10 +57,37 @@ nav .nav-box-left img {
   }
 }
 
+nav div:last-of-type span.close {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type span.close {
+    display: flex;
+  }
+  nav div:last-of-type span.close:active ~ div {
+    position: absolute;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type {
+    margin-left: -35vw;
+    line-height: 6vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   nav div:last-of-type div {
     display: flex;
     flex-direction: column;
+  }
+  nav div:last-of-type div a {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    line-height: 10vw;
   }
 }
 
@@ -68,6 +104,12 @@ nav div:last-of-type div .dropdown:hover .dropdown-content {
   grid-template-areas: 'basic . compare' 'premium . compare ' 'business . compare';
 }
 
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown:hover .dropdown-content {
+    display: none;
+  }
+}
+
 nav div:last-of-type div .dropdown:hover .dropdown-content2 {
   display: grid;
   width: auto;
@@ -77,8 +119,98 @@ nav div:last-of-type div .dropdown:hover .dropdown-content2 {
   grid-template-areas: 'basic compare' 'premium contact ' 'business .';
 }
 
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown:hover .dropdown-content2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown a {
+    border: none;
+  }
+}
+
 nav div:last-of-type div .dropdown a i {
   font-size: 0.8vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown a i {
+    display: none;
+  }
+}
+
+nav div:last-of-type div .dropdown .phone {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .phone {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .phone a:nth-of-type(1)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Basic";
+  }
+  nav div:last-of-type div .dropdown .phone a:nth-of-type(2)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Premium";
+  }
+  nav div:last-of-type div .dropdown .phone a:nth-of-type(3)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Business";
+  }
+  nav div:last-of-type div .dropdown .phone a:nth-of-type(4)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Compare Plans";
+  }
+}
+
+nav div:last-of-type div .dropdown .phone2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .phone2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .phone2 a:nth-of-type(1)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "About evernote";
+  }
+  nav div:last-of-type div .dropdown .phone2 a:nth-of-type(2)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Press";
+  }
+  nav div:last-of-type div .dropdown .phone2 a:nth-of-type(3)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Inclusion Diversity";
+  }
+  nav div:last-of-type div .dropdown .phone2 a:nth-of-type(4)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Careers";
+  }
+  nav div:last-of-type div .dropdown .phone2 a:nth-of-type(5)::before {
+    font-weight: normal;
+    margin-left: 10vw;
+    content: "Contact Us";
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content {
@@ -89,6 +221,12 @@ nav div:last-of-type div .dropdown .dropdown-content {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: .5vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content {
+    margin-left: 10vw;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content:before {
@@ -107,6 +245,12 @@ nav div:last-of-type div .dropdown .dropdown-content div {
   flex-direction: row;
   align-items: center;
   border-radius: .5vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content div {
+    margin-bottom: 4vw;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(1) {
@@ -129,8 +273,20 @@ nav div:last-of-type div .dropdown .dropdown-content div:nth-of-type(5) {
   grid-area: contact;
 }
 
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content div p {
+    font-size: 5vw !important;
+  }
+}
+
 nav div:last-of-type div .dropdown .dropdown-content div:hover {
   background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content div:hover {
+    display: none;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content div:hover i {
@@ -148,6 +304,12 @@ nav div:last-of-type div .dropdown .dropdown-content div:hover div.box1 span {
 nav div:last-of-type div .dropdown .dropdown-content div i {
   font-size: 3vw;
   color: green;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content div i {
+    display: none;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content div div.box1 {
@@ -179,6 +341,12 @@ nav div:last-of-type div .dropdown .dropdown-content2 {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: .5vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content2 {
+    margin-left: 10vw;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content2:before {
@@ -223,6 +391,12 @@ nav div:last-of-type div .dropdown .dropdown-content2 div:hover {
   background-color: green;
 }
 
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content2 div:hover {
+    display: none;
+  }
+}
+
 nav div:last-of-type div .dropdown .dropdown-content2 div:hover i {
   color: white;
 }
@@ -238,6 +412,12 @@ nav div:last-of-type div .dropdown .dropdown-content2 div:hover div.box1 span {
 nav div:last-of-type div .dropdown .dropdown-content2 div i {
   font-size: 3vw;
   color: green;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div .dropdown .dropdown-content2 div i {
+    display: none;
+  }
 }
 
 nav div:last-of-type div .dropdown .dropdown-content2 div div.box1 {
@@ -276,10 +456,22 @@ nav div:last-of-type div.box-right {
   margin-right: 4vw;
 }
 
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div.box-right {
+    margin-left: 0vw !important;
+  }
+}
+
 nav div:last-of-type div.box-right a {
   font-weight: normal;
   text-decoration: none;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  nav div:last-of-type div.box-right a {
+    border: none;
+  }
 }
 
 nav div:last-of-type div.box-right span {
@@ -430,8 +622,8 @@ nav div:last-of-type div.box-right button:hover {
 
 @media screen and (max-width: 600px) {
   .slideshow {
-    padding-top: 200vw !important;
-    padding-bottom: 110vw !important;
+    padding-top: 200vw;
+    padding-bottom: 110vw;
   }
 }
 

@@ -11,6 +11,11 @@ $count: 10;
   100% {opacity: 1;}
 }
 
+@keyframes close-menu {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-100vw, 0);}
+}
+
 // @keyframes pulse2 {
 //   0% {opacity: 0.4;}
 //   100% {opacity: 1;}
@@ -41,11 +46,41 @@ nav{
  }
 
  div:last-of-type{
+
+   span.close{
+     display: none;
+     @media screen and (max-width: 600px){
+       display: flex;
+       &:active{
+         ~div{
+           position: absolute;
+          height: 0;
+          opacity:0;
+         }
+       }
+     }
+   }
+
+   @media screen and (max-width: 600px){
+     margin-left:-35vw;
+     line-height: 6vw;
+   }
+
+
    div{
      @media screen and (max-width: 600px){
        display: flex;
        flex-direction: column;
+
+       a{
+         border-top: 1px solid grey;
+         border-bottom: 1px solid grey;
+         line-height: 10vw;
+       }
+
+
      }
+
 
         .dropdown {
          margin: 0!important;
@@ -60,6 +95,10 @@ nav{
                                  'premium . compare '
                                  'business . compare'
                                   ;
+            @media screen and (max-width: 600px){
+              display: none;
+              }
+
            }
 
           &:hover .dropdown-content2 {
@@ -71,16 +110,76 @@ nav{
             grid-template-areas: 'basic compare'
                                  'premium contact '
                                  'business .'
-                                  ;
+                                ;
+            @media screen and (max-width: 600px){
+              display: none;
+              }
           }
 
          a{
-
-
+           @media screen and (max-width: 600px){
+            border: none;
+           }
            i{
              font-size: 0.8vw;
+             @media screen and (max-width: 600px){
+                 display: none;
+             }
+
            }
          }
+
+      .phone{
+        display: none;
+
+        @media screen and (max-width: 600px){
+        display: flex;
+        }
+
+           a{
+             @media screen and (max-width: 600px){
+
+                 @each $num, $text in (1, Basic), (2, Premium), (3, Business), (4, Compare Plans) {
+                   &:nth-of-type(#{$num}){
+                     &::before{
+                       font-weight: normal;
+                       margin-left: 10vw;
+                       content: '#{$text}';
+                     }
+                   }
+                 }
+
+
+             }
+           }
+        }
+
+        .phone2{
+          display: none;
+
+          @media screen and (max-width: 600px){
+          display: flex;
+          flex-direction: column;
+          }
+
+             a{
+               @media screen and (max-width: 600px){
+
+                   @each $num, $text in (1, About evernote), (2, Press), (3, Inclusion Diversity), (4, Careers), (5, Contact Us){
+                     &:nth-of-type(#{$num}){
+                       &::before{
+                         font-weight: normal;
+                         margin-left: 10vw;
+                         content: '#{$text}';
+                       }
+                     }
+                   }
+
+
+               }
+             }
+          }
+
 
          .dropdown-content {
           display: none;
@@ -90,6 +189,10 @@ nav{
           background-color: #f9f9f9;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           border-radius: .5vw;
+
+          @media screen and (max-width: 600px){
+            margin-left: 10vw;
+          }
 
           &:before {
              content:"";
@@ -107,6 +210,10 @@ nav{
              flex-direction: row;
              align-items: center;
              border-radius: .5vw;
+
+             @media screen and (max-width: 600px){
+               margin-bottom: 4vw;
+             }
 
 
              &:nth-of-type(1){
@@ -129,14 +236,25 @@ nav{
                grid-area: contact;
              }
 
+             p{
+               @media screen and (max-width: 600px){
+                 font-size: 5vw!important;
+               }
+             }
+
                 &:hover{
                  background-color: green;
+
+                 @media screen and (max-width: 600px){
+                   display: none;
+                 }
                  i{
                      color:white;
                   }
 
                   div.box1 p{
                     color: white;
+
                   }
 
                   div.box1 span{
@@ -148,6 +266,9 @@ nav{
                 i{
                   font-size: 3vw;
                   color: green;
+                  @media screen and (max-width: 600px){
+                    display: none;
+                  }
 
                 }
 
@@ -185,6 +306,10 @@ nav{
            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
            border-radius: .5vw;
 
+           @media screen and (max-width: 600px){
+             margin-left: 10vw;
+           }
+
            &:before {
               content:"";
               position: absolute;
@@ -201,7 +326,6 @@ nav{
               flex-direction: row;
               align-items: center;
               border-radius: .5vw;
-
 
               &:nth-of-type(1){
                 grid-area: basic;
@@ -227,6 +351,11 @@ nav{
 
               &:hover{
                background-color: green;
+
+               @media screen and (max-width: 600px){
+                 display: none;
+               }
+
                i{
                    color:white;
                 }
@@ -244,6 +373,10 @@ nav{
               i{
                 font-size: 3vw;
                 color: green;
+
+                @media screen and (max-width: 600px){
+                  display: none;
+                }
 
               }
 
@@ -286,11 +419,17 @@ nav{
 
      div.box-right{
          margin-right: 4vw;
+         @media screen and (max-width: 600px){
+           margin-left: 0vw!important;
+         }
 
          a{
          font-weight: normal;
          text-decoration: none;
          margin:0;
+         @media screen and (max-width: 600px){
+           border: none;
+         }
         }
 
         span{
@@ -436,8 +575,8 @@ nav{
 
  @media screen and (max-width: 600px){
    // padding: 25vw 0!important;
-    padding-top: 200vw!important;
-    padding-bottom: 110vw!important;
+    padding-top: 200vw;
+    padding-bottom: 110vw;
 
  }
 
