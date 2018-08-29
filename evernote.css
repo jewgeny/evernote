@@ -547,5 +547,36 @@ footer.footer div.line hr {
 footer.footer div.text {
   display: flex;
   flex-direction: column;
-  border-top: 5px solid black;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
 }

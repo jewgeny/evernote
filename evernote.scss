@@ -247,7 +247,17 @@ footer.footer{
        div.text{
          display:flex;
          flex-direction: column;
-         border-top: 5px solid black;
+
+         @for $i from 1 to 5{
+            p{
+              display:flex;
+
+            }
+            &:first-of-type($i){
+              font-style: bold;
+            }
+         }
+
 
        }
         // div{
