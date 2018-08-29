@@ -216,3 +216,44 @@
   }
 
 }
+
+footer.footer{
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 0;
+  background-color: #fff;
+
+      div.logo{
+          width:  14vw;
+          height: 6vw;
+          padding: 4vw ;
+          margin-left: 4vw;
+          background-image: url(../images/logo.jpg);
+          background-size: 100% 100%;
+      }
+      div.line{
+
+          width: 90%;
+          margin: 0 auto;
+
+           hr {
+               width: 100%;
+               border: none;
+               height: 5px;
+
+               background-color: #000;
+            }
+       }
+       div.text{
+         display:flex;
+         flex-direction: column;
+         border-top: 5px solid black;
+
+       }
+        // div{
+        //   display: flex;
+        //   a{
+        //     :first-
+        //
+        // }
+}
