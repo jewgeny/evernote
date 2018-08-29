@@ -24,7 +24,6 @@
   padding: 1.5vw 0.5vw;
   margin: 2vw 4vw;
   width: 40vw;
-  justify-content: left;
 }
 
 @media screen and (max-width: 600px) {
@@ -1492,4 +1491,69 @@ nav div:last-of-type div.box-right button:hover {
   .section10 .center div:nth-of-type(6) {
     height: 50vw;
   }
+}
+
+footer.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 0;
+  background-color: #fff;
+}
+
+footer.footer div.logo {
+  width: 14vw;
+  height: 6vw;
+  padding: 4vw;
+  margin-left: 4vw;
+  background-image: url(../images/logo.jpg);
+  background-size: 100% 100%;
+}
+
+footer.footer div.line {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer.footer div.line hr {
+  width: 100%;
+  border: none;
+  height: 5px;
+  background-color: #000;
+}
+
+footer.footer div.text {
+  display: flex;
+  flex-direction: column;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
+}
+
+footer.footer div.text p {
+  display: flex;
+}
+
+footer.footer div.text:first-of-type($i) {
+  font-style: bold;
 }
