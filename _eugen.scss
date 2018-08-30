@@ -591,34 +591,42 @@ nav{
 //       flex-direction: column;
 //       align-items: center;
 //     }
+section.slides{
+    div{
+        width: 90vw;
+        align-items: center;
+        border: 4px solid black;
+        p{
+          display:none;
 
-    li{
-        @each $num, $img in (1, business-active-black), (2, the-verge), (3, webby-active), (4, forbes-active-black),
-                          (5, cloud100-active), (6, the-manual){
+        }
+               @each $num, $img in (1, business-active-black), (2, the-verge), (3, webby-active), (4, forbes-active-black),
+                                (5, cloud100-active), (6, the-manual){
 
-          &:nth-of-type(#{$num}){
+                                  button:nth-of-type(#{$num}){
 
-          width: 30vw;
-          height:5vw;
-          background-image: url(images/#{$img}.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          opacity: 0.4;
-          margin: 0 2vw;
+                                  width: 30vw;
+                                  height:5vw;
+                                  background-image: url(images/#{$img}.png);
+                                  background-repeat: no-repeat;
+                                  background-size: 100% 100%;
+                                  opacity: 0.4;
+                                  margin: 0 2vw;
 
-          @media screen and (max-width: 600px){
-          margin: 5vw 0;
-          width: 60vw;
-          height: 20vw;
-          }
+                                  @media screen and (max-width: 600px){
+                                  margin: 5vw 0;
+                                  width: 60vw;
+                                  height: 20vw;
+                                  }
 
-            &:hover{
-              opacity: 1;
-            }
-          }
-       }
+                                  &:hover{
+                                    opacity: 1;
+                                  }
+
+                }
+             }
     }
-  }
+
 
 .slide-text-box{
   position: absolute;

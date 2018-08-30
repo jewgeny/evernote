@@ -904,34 +904,17 @@ nav div:last-of-type div.box-right button:hover {
   color: green;
 }
 
-.slideshow {
-  padding: 15vw 0;
-}
-
-@media screen and (max-width: 600px) {
-  .slideshow {
-    padding-top: 200vw;
-    padding-bottom: 110vw;
-  }
-}
-
-.slideshow .carousel-indicators .active {
-  opacity: 1 !important;
-}
-
-.slideshow ul {
+section.slides div {
   width: 90vw;
+  align-items: center;
+  border: 4px solid black;
 }
 
-@media screen and (max-width: 600px) {
-  .slideshow ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+section.slides div p {
+  display: none;
 }
 
-.slideshow ul li:nth-of-type(1) {
+section.slides div button:nth-of-type(1) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/business-active-black.png);
@@ -942,18 +925,18 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(1) {
+  section.slides div button:nth-of-type(1) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(1):hover {
+section.slides div button:nth-of-type(1):hover {
   opacity: 1;
 }
 
-.slideshow ul li:nth-of-type(2) {
+section.slides div button:nth-of-type(2) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/the-verge.png);
@@ -964,18 +947,18 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(2) {
+  section.slides div button:nth-of-type(2) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(2):hover {
+section.slides div button:nth-of-type(2):hover {
   opacity: 1;
 }
 
-.slideshow ul li:nth-of-type(3) {
+section.slides div button:nth-of-type(3) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/webby-active.png);
@@ -986,18 +969,18 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(3) {
+  section.slides div button:nth-of-type(3) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(3):hover {
+section.slides div button:nth-of-type(3):hover {
   opacity: 1;
 }
 
-.slideshow ul li:nth-of-type(4) {
+section.slides div button:nth-of-type(4) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/forbes-active-black.png);
@@ -1008,18 +991,18 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(4) {
+  section.slides div button:nth-of-type(4) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(4):hover {
+section.slides div button:nth-of-type(4):hover {
   opacity: 1;
 }
 
-.slideshow ul li:nth-of-type(5) {
+section.slides div button:nth-of-type(5) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/cloud100-active.png);
@@ -1030,18 +1013,18 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(5) {
+  section.slides div button:nth-of-type(5) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(5):hover {
+section.slides div button:nth-of-type(5):hover {
   opacity: 1;
 }
 
-.slideshow ul li:nth-of-type(6) {
+section.slides div button:nth-of-type(6) {
   width: 30vw;
   height: 5vw;
   background-image: url(images/the-manual.png);
@@ -1052,30 +1035,30 @@ nav div:last-of-type div.box-right button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow ul li:nth-of-type(6) {
+  section.slides div button:nth-of-type(6) {
     margin: 5vw 0;
     width: 60vw;
     height: 20vw;
   }
 }
 
-.slideshow ul li:nth-of-type(6):hover {
+section.slides div button:nth-of-type(6):hover {
   opacity: 1;
 }
 
-.slideshow .slide-text-box {
+section.slides .slide-text-box {
   position: absolute;
   top: 2vw;
 }
 
-.slideshow .slide-text-box div p {
+section.slides .slide-text-box div p {
   font-size: 1.5vw;
   color: black;
   margin: 0 10vw;
 }
 
 @media screen and (max-width: 600px) {
-  .slideshow .slide-text-box div p {
+  section.slides .slide-text-box div p {
     font-size: 7vw;
   }
 }
