@@ -312,23 +312,56 @@ footer.footer{
      margin-bottom: 2vw;
      padding-bottom: 2vw;
 
+     @media screen and (max-width: 600px){
+       margin: 25vw 0;
+       flex-direction: column-reverse;
+       text-align: center;
+     }
+
      .language{
+
+       @media screen and (max-width: 600px){
+        margin-top: 3vw;
+       }
+
        a{
          text-decoration: none;
          color: black;
          font-size: 1vw;
          font-weight: bold;
+
+         @media screen and (max-width: 600px){
+          position: absolute;
+          left: 0;
+          font-size: 3vw;
+          margin-top: 6vw;
+          margin-left: 4vw;
+         }
+
        }
        select{
          border: none;
          font-size: 1vw;
+
+         @media screen and (max-width: 600px){
+          position: absolute;
+          right: 0;
+          font-size: 3vw;
+          margin-top: 6vw;
+          margin-right: 3vw;
+         }
        }
      }
 
      .social{
 
        i{
-         padding: 0 1.5vw;
+         padding-left: 2.5vw;
+
+         @media screen and (max-width: 600px){
+           font-size: 7vw;
+           padding: 0 3vw;
+         }
        }
 
      }
@@ -341,13 +374,23 @@ footer.footer{
      margin: 0 auto;
      display: flex;
      justify-content: space-between;
-     margin-bottom: 5vw;
      padding-bottom: 2vw;
+
+     @media screen and (max-width: 600px){
+       margin-top: 12vw;
+       flex-direction: column-reverse;
+       text-align: center;
+     }
 
      .copyright{
        p{
          font-size: .8vw;
          color: grey;
+
+         @media screen and (max-width: 600px){
+          font-size: 4vw;
+          margin-top: 5vw;
+         }
        }
 
      }
@@ -355,10 +398,28 @@ footer.footer{
      .links{
 
        a{
-         padding: 0 .5vw;
+         padding-left: 1.7vw;
          color: grey;
          font-size: .8vw;
          text-decoration: none;
+
+         @media screen and (max-width: 600px){
+          font-size: 4vw;
+          padding: 0;
+
+          &:first-of-type{
+            margin: 0;
+          }
+
+          &:nth-of-type(2){
+            margin: 0 23vw;
+          }
+
+          &:last-of-type{
+            margin: 0;
+          }
+
+         }
 
          &:hover{
            color: black;
@@ -367,5 +428,20 @@ footer.footer{
 
      }
 
+   }
+
+   .footer-logo{
+       display: none;
+
+       @media screen and (max-width: 600px){
+         display: block;
+         margin: 10vw 0;
+
+         img{
+           display: block;
+           width: 15vw;
+           margin: 0 auto;
+         }
+       }
 
    }

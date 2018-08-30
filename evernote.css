@@ -1595,6 +1595,20 @@ footer.footer div.text .sign-in-footer button:hover {
   padding-bottom: 2vw;
 }
 
+@media screen and (max-width: 600px) {
+  .footer2 {
+    margin: 25vw 0;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer2 .language {
+    margin-top: 3vw;
+  }
+}
+
 .footer2 .language a {
   text-decoration: none;
   color: black;
@@ -1602,13 +1616,40 @@ footer.footer div.text .sign-in-footer button:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  .footer2 .language a {
+    position: absolute;
+    left: 0;
+    font-size: 3vw;
+    margin-top: 6vw;
+    margin-left: 4vw;
+  }
+}
+
 .footer2 .language select {
   border: none;
   font-size: 1vw;
 }
 
+@media screen and (max-width: 600px) {
+  .footer2 .language select {
+    position: absolute;
+    right: 0;
+    font-size: 3vw;
+    margin-top: 6vw;
+    margin-right: 3vw;
+  }
+}
+
 .footer2 .social i {
-  padding: 0 1.5vw;
+  padding-left: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .footer2 .social i {
+    font-size: 7vw;
+    padding: 0 3vw;
+  }
 }
 
 .footer3 {
@@ -1616,8 +1657,15 @@ footer.footer div.text .sign-in-footer button:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5vw;
   padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .footer3 {
+    margin-top: 12vw;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 .footer3 .copyright p {
@@ -1625,13 +1673,52 @@ footer.footer div.text .sign-in-footer button:hover {
   color: grey;
 }
 
+@media screen and (max-width: 600px) {
+  .footer3 .copyright p {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+}
+
 .footer3 .links a {
-  padding: 0 .5vw;
+  padding-left: 1.7vw;
   color: grey;
   font-size: .8vw;
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .footer3 .links a {
+    font-size: 4vw;
+    padding: 0;
+  }
+  .footer3 .links a:first-of-type {
+    margin: 0;
+  }
+  .footer3 .links a:nth-of-type(2) {
+    margin: 0 23vw;
+  }
+  .footer3 .links a:last-of-type {
+    margin: 0;
+  }
+}
+
 .footer3 .links a:hover {
   color: black;
+}
+
+.footer-logo {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-logo {
+    display: block;
+    margin: 10vw 0;
+  }
+  .footer-logo img {
+    display: block;
+    width: 15vw;
+    margin: 0 auto;
+  }
 }
