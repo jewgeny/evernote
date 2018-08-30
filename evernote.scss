@@ -313,7 +313,7 @@ footer.footer{
      padding-bottom: 2vw;
 
      @media screen and (max-width: 600px){
-       margin: 25vw 0;
+       margin: 25vw auto;
        flex-direction: column-reverse;
        text-align: center;
      }

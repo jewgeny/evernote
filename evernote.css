@@ -1597,7 +1597,7 @@ footer.footer div.text .sign-in-footer button:hover {
 
 @media screen and (max-width: 600px) {
   .footer2 {
-    margin: 25vw 0;
+    margin: 25vw auto;
     flex-direction: column-reverse;
     text-align: center;
   }
