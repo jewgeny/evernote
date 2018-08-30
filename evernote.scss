@@ -302,3 +302,70 @@ footer.footer{
      }
 
    }
+
+   .footer2{
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px solid lightgrey;
+     margin-bottom: 2vw;
+     padding-bottom: 2vw;
+
+     .language{
+       a{
+         text-decoration: none;
+         color: black;
+         font-size: 1vw;
+         font-weight: bold;
+       }
+       select{
+         border: none;
+         font-size: 1vw;
+       }
+     }
+
+     .social{
+
+       i{
+         padding: 0 1.5vw;
+       }
+
+     }
+
+   }
+
+
+   .footer3{
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 5vw;
+     padding-bottom: 2vw;
+
+     .copyright{
+       p{
+         font-size: .8vw;
+         color: grey;
+       }
+
+     }
+
+     .links{
+
+       a{
+         padding: 0 .5vw;
+         color: grey;
+         font-size: .8vw;
+         text-decoration: none;
+
+         &:hover{
+           color: black;
+         }
+       }
+
+     }
+
+
+   }

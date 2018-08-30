@@ -1584,3 +1584,54 @@ footer.footer div.text .sign-in-footer button {
 footer.footer div.text .sign-in-footer button:hover {
   border-color: #00e600;
 }
+
+.footer2 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 2vw;
+  padding-bottom: 2vw;
+}
+
+.footer2 .language a {
+  text-decoration: none;
+  color: black;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.footer2 .language select {
+  border: none;
+  font-size: 1vw;
+}
+
+.footer2 .social i {
+  padding: 0 1.5vw;
+}
+
+.footer3 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+  padding-bottom: 2vw;
+}
+
+.footer3 .copyright p {
+  font-size: .8vw;
+  color: grey;
+}
+
+.footer3 .links a {
+  padding: 0 .5vw;
+  color: grey;
+  font-size: .8vw;
+  text-decoration: none;
+}
+
+.footer3 .links a:hover {
+  color: black;
+}
