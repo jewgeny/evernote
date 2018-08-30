@@ -570,27 +570,27 @@ nav{
   }
 }
 
-.slideshow{
- padding: 15vw 0;
-
- @media screen and (max-width: 600px){
-   // padding: 25vw 0!important;
-    padding-top: 200vw;
-    padding-bottom: 110vw;
-
- }
-
- .carousel-indicators .active {
-   opacity: 1!important;
- }
-
-  ul{
-    width: 90vw;
-    @media screen and (max-width: 600px){
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+// .slideshow{
+//  padding: 15vw 0;
+//
+//  @media screen and (max-width: 600px){
+//    // padding: 25vw 0!important;
+//     padding-top: 200vw;
+//     padding-bottom: 110vw;
+//
+//  }
+//
+//  .carousel-indicators .active {
+//    opacity: 1!important;
+//  }
+//
+//   ul{
+//     width: 90vw;
+//     @media screen and (max-width: 600px){
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//     }
 
     li{
         @each $num, $img in (1, business-active-black), (2, the-verge), (3, webby-active), (4, forbes-active-black),
