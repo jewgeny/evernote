@@ -1509,6 +1509,13 @@ footer.footer div.logo {
   background-size: 100% 100%;
 }
 
+@media screen and (max-width: 600px) {
+  footer.footer div.logo {
+    width: 35vw;
+    height: 20vw;
+  }
+}
+
 footer.footer div.line {
   width: 90%;
   margin: 0 auto;
@@ -1527,6 +1534,12 @@ footer.footer div.text {
   width: 90%;
   margin: 2vw auto;
   padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  footer.footer div.text {
+    flex-direction: column;
+  }
 }
 
 footer.footer div.text div {
