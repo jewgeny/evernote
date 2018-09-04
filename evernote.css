@@ -345,15 +345,22 @@ nav .nav-box-left img {
   }
 }
 
-nav div:last-of-type span.close {
+nav div:last-of-type .close-button {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  nav div:last-of-type span.close {
+  nav div:last-of-type .close-button {
     display: flex;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
   }
-  nav div:last-of-type span.close:active ~ div {
+  nav div:last-of-type .close-button:focus i {
+    display: none;
+  }
+  nav div:last-of-type .close-button:focus ~ div {
     position: absolute;
     height: 0;
     opacity: 0;

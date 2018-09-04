@@ -47,11 +47,18 @@ nav{
 
  div:last-of-type{
 
-   span.close{
+ .close-button{
      display: none;
      @media screen and (max-width: 600px){
        display: flex;
-       &:active{
+       border: none;
+       background: none;
+       outline: none;
+       cursor: pointer;
+       &:focus{
+         i{
+           display: none;
+         }
          ~div{
            position: absolute;
           height: 0;
@@ -59,7 +66,8 @@ nav{
          }
        }
      }
-   }
+
+ }
 
    @media screen and (max-width: 600px){
      margin-left:-35vw;
