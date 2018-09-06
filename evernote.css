@@ -529,8 +529,8 @@ nav div:last-of-type div .dropdown .dropdown-content:before {
   position: absolute;
   top: -20px;
   left: 18px;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
   border-bottom: 20px solid #f9f9f9;
 }
 
@@ -631,6 +631,7 @@ nav div:last-of-type div .dropdown .dropdown-content div div.box1 span {
 nav div:last-of-type div .dropdown .dropdown-content2 {
   display: none;
   margin-top: 1.3vw;
+  margin-left: -10px;
   padding: 0.5vw;
   position: absolute;
   background-color: #f9f9f9;
@@ -648,9 +649,9 @@ nav div:last-of-type div .dropdown .dropdown-content2:before {
   content: "";
   position: absolute;
   top: -20px;
-  left: 18px;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  left: 35px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
   border-bottom: 20px solid #f9f9f9;
 }
 
